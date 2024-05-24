@@ -1,0 +1,16 @@
+:root {
+	--primary-color: #007bff; /* Define a root variable for primary color */
+	--action-primary: #1c966c;
+	--action-primary_dark: #006e5d;
+	--action-primary_light: #00e37c;
+	--action-secondary: #e6485d;
+	--action-secondary_light: #ff465a;
+	--SprintEins-05: #f0f0f0;
+	--background-1: #d4d7d6;
+	--background-2: #7e8783;
+	--background-3: #5a635f;
+	--background-4: #3d443d;
+	--background-5: #262d24;
+	--background-6: #1e281d;
+	--background-7: #111913;
+}

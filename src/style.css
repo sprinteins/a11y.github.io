@@ -1,0 +1,32 @@
+/* Class for H1 */
+h1,
+header {
+	font-family: "Helvetica Neue LT Pro", sans-serif;
+	font-weight: 300; /* Light */
+	font-size: 49pt;
+	line-height: 49pt; /* ZAB 49pt */
+}
+
+/* Class for H2 */
+h2 {
+	font-family: "Helvetica Neue LT Pro", sans-serif;
+	font-weight: 300; /* Light */
+	font-size: 30pt;
+	line-height: 34pt; /* ZAB 34pt */
+}
+
+/* Class for Subline */
+.subline {
+	font-family: SoinSansPro, "Soin Sans Pro", sans-serif;
+	font-weight: 700; /* Headline */
+	font-size: 20pt;
+	line-height: 22pt; /* ZAB 22pt */
+}
+
+/* Class for Copy */
+.copy {
+	font-family: "Helvetica Neue LT Pro", sans-serif;
+	font-weight: 300; /* Light */
+	font-size: 20pt;
+	line-height: 24pt; /* ZAB 24pt */
+}

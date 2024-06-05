@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Reasons to Act Now!</title>
+    <link rel="stylesheet" href="./colors/index.css">
+    <link rel="stylesheet" href="font-faces.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        h3 {
+            padding: 0;
+            margin: 0;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            grid-template-areas:
+                ". header"
+                "left-c right-c"
+                "left-c right-c"
+                "left-c right-c"
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .left-content {
+            grid-area: left-c;
+        }
+
+        .right-content {
+            grid-area: right-c;
+        }
+
+        p {
+            all: unset;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>For whom?</h1>
+        <p>
+            Accessibility helps people with all kinds of disabilities. Every person can also be temporarily or situationally limited at some point.
+        </p>
+        <div class="grid-container">
+            <div class="header">
+                <h2>Mobility</h2>
+            </div>
+            <div class="left-content">
+                <h3 class="smallcapital">PERMANENT</h3>
+            </div>
+            <div class="right-content">
+                <p>Amputation</p>
+            </div>
+            <div class="left-content">
+                <h3 class="smallcapital">TEMPORARY</h3>
+            </div>
+            <div class="right-content">
+                <p>Injuries</p>
+            </div>
+
+            <div class="left-content">
+                <h3 class="smallcapital">SITUATIONAL</h3>
+            </div>
+            <div class="right-content">
+                <p>Amputation</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="grid-container">
+
+        <div class="header">
+
+            <h2>Vision</h2>
+        </div>
+        <div class="left-content">
+            <h3 class="smallcapital">PERMANENT</h3>
+            <h3 class="smallcapital">TEMPORARY</h3>
+            <h3 class="smallcapital">SITUATIONAL</h3>
+        </div>
+        <div class="right-content">
+            <p>Blindness, impairment</p>
+            <p>Eye injury</p>
+            <p>Reflecting sunlight</p>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="header">
+
+            <h2>Hearing</h2>
+        </div>
+        <div class="left-content">
+            <h3 class="smallcapital">PERMANENT</h3>
+            <h3 class="smallcapital">TEMPORARY</h3>
+            <h3 class="smallcapital">SITUATIONAL</h3>
+        </div>
+        <div class="right-content">
+            <p>Deafness, hardness of hearing</p>
+            <p>Infection, acute hearing loss</p>
+            <p>Background noises</p>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="header">
+
+            <h2>Cognitive</h2>
+        </div>
+        <div class="left-content">
+            <h3 class="smallcapital">PERMANENT</h3>
+            <h3 class="smallcapital">TEMPORARY</h3>
+            <h3 class="smallcapital">SITUATIONAL</h3>
+        </div>
+        <div class="right-content">
+            <p>Dementia, brain fog</p>
+            <p>Migraine, fatigue</p>
+            <p>Multitasking</p>
+        </div>
+    </div>
+    </div>
+    <div class="qr-code">
+        <p>LEARN MORE:</p>
+        <img src="qr-code.png" alt="QR code leading to more information" aria-label="QR code">
+    </div>
+    </div>
+</body>
+
+</html>

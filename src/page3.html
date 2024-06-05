@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Reasons to Act Now!</title>
+    <link rel="stylesheet" href="./colors/index.css">
+    <link rel="stylesheet" href="font-faces.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /*
+        */
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding: 0;
+            padding-left: 0;
+            list-style-position: inside;
+        }
+
+        li {
+            counter-increment: item;
+            margin-bottom: 10px;
+            padding-left: 1.5rem;
+            /* Adds padding to keep text aligned */
+            text-indent: -1.5rem;
+            /* Moves first line back to align with numbers */
+        }
+
+        li:before {
+            content: counter(item);
+            width: 1.2em;
+            padding-right: 0.5rem;
+            text-align: center;
+            font-size: 1rem;
+            font-family: "SoinSansPro-Bold";
+        }
+
+        .gains {
+            all: unset;
+        }
+
+        .gains:before {
+            all: unset;
+        }
+
+        .gains h2 {
+            padding-left: 1.5rem;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>4 reasons to act now!</h1>
+        <ol>
+            <li class="copy">
+                Implementation required by <span class="highlight">regulation</span>
+            </li>
+            <li class="copy">
+                <span class="highlight">Penalties</span> for non-compliance
+            </li>
+            <li class="copy">
+                <span class="highlight">Increasing number</span> of users with
+                disabilities and impairments due to demographic change
+            </li>
+            <li class="copy">
+                Starting accessibility early <span class="highlight">reduces
+                    implementation scope</span>
+            </li>
+        </ol>
+        <ol class="gains">
+            <li class="gains">
+                <h2 class="subline smallcapital">5 Gains for Free</h2>
+            </li>
+        </ol>
+        <ol>
+            <li class="copy">
+                Improved usability leads to increased user satisfaction
+            </li>
+            <li class="copy">
+                Improved SEO
+            </li>
+            <li class="copy">
+                Increase of potential customer groups
+            </li>
+            <li class="copy">
+                Overcomes technical limitations such as small displays or situational
+                constraints
+            </li>
+            <li class="copy">
+                Lower customer support efforts
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>

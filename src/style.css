@@ -1,32 +1,73 @@
 /* Class for H1 */
+:root {
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 20px;
+	color: #333;
+}
+
 h1,
-header {
-	font-family: "Helvetica Neue LT Pro", sans-serif;
+.h1 {
+	font-family: "HelveticaLTStd-Light", sans-serif;
 	font-weight: 300; /* Light */
-	font-size: 49pt;
-	line-height: 49pt; /* ZAB 49pt */
+	font-size: 4.083rem; /* 49pt ≈ 4.083rem */
+	line-height: 4.083rem; /* ZAB 49pt ≈ 4.083rem */
+	margin-block-start: 0.335em;
+	margin-block-end: 0.335em;
 }
 
 /* Class for H2 */
-h2 {
-	font-family: "Helvetica Neue LT Pro", sans-serif;
+h2,
+.h2 {
+	font-family: "HelveticaLTStd-Light", "Helvetica Neue LT Pro", sans-serif;
 	font-weight: 300; /* Light */
-	font-size: 30pt;
-	line-height: 34pt; /* ZAB 34pt */
+	font-size: 2.5rem; /* 30pt ≈ 2.5rem */
+	line-height: 2.833rem; /* ZAB 34pt ≈ 2.833rem */
 }
 
 /* Class for Subline */
 .subline {
 	font-family: SoinSansPro, "Soin Sans Pro", sans-serif;
 	font-weight: 700; /* Headline */
-	font-size: 20pt;
-	line-height: 22pt; /* ZAB 22pt */
+	font-size: 1.667rem; /* 20pt ≈ 1.667rem */
+	line-height: 1.833rem; /* ZAB 22pt ≈ 1.833rem */
 }
 
 /* Class for Copy */
 .copy {
-	font-family: "Helvetica Neue LT Pro", sans-serif;
+	font-family: "HelveticaLTStd-Light", sans-serif;
 	font-weight: 300; /* Light */
-	font-size: 20pt;
-	line-height: 24pt; /* ZAB 24pt */
+	font-size: 1.667rem; /* 20pt ≈ 1.667rem */
+	line-height: 2rem; /* ZAB 24pt ≈ 2rem */
+}
+
+/* Class for Unknown */
+.unknown {
+	font-family: "HelveticaLTStd-Light", sans-serif;
+	font-weight: 300; /* Light */
+	font-size: 1rem; /**/
+	line-height: 1.267rem; /*  */
+}
+
+.highlight {
+	font-family: HelveticaLTStd-Bold;
+	font-weight: 700;
+}
+
+.smallcapital {
+	line-height: 1.6;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	font-size: clamp(1rem, 0.7vw, 1.65rem);
+}
+
+.fat {
+	font-family: HelveticaLTStd-Bold;
+	font-weight: 700;
 }

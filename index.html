@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <style>
+    .container {}
+
+    .container iframe {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<script>
+  function loadPage(page) {
+    document.getElementById('iframe').src = page;
+  }
+</script>
+
+<body>
+  <div class="nav">
+    <button onclick="loadPage('./src/page1.html')">Page 1</button>
+    <button onclick="loadPage('./src/page2.html')">Page 2</button>
+    <button onclick="loadPage('./src/page3.html')">Page 3</button>
+    <button onclick="loadPage('./src/page4.html')">Page 4</button>
+    <!-- Add more buttons as needed -->
+  </div>
+  <div class="container">
+
+    <iframe id="iframe" src="./src/page1.html" title="" allowfullscreen width="inherit"></iframe>
+  </div>
+
+</body>
+
+</html>

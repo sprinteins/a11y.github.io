@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Reasons to Act Now!</title>
+    <link rel="stylesheet" href="./colors/index.css">
+    <link rel="stylesheet" href="font-faces.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        h1 span {
+            font-size: 2rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        ul li::before {
+            content: "_";
+            position: absolute;
+            left: -0.75rem;
+            top: 0;
+            color: #333;
+        }
+
+        .image-container {
+            margin-top: 2rem;
+            width: 100vw;
+            margin-left: -20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            align-items: end;
+            grid-gap: 1rem;
+        }
+
+        .vLine {
+            border-left: 1px solid black;
+            height: 110%;
+            position: absolute;
+            left: 3rem;
+        }
+
+        .left {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .triangle {
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 4.5rem;
+            height: 4rem;
+            align-self: center;
+            background: black;
+            position: absolute;
+            font-size: 2rem;
+            left: 12.5px;
+            top: 1rem;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            rotate: 90deg
+        }
+
+        .circle {
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 4rem;
+            height: 4rem;
+            align-self: center;
+            background: black;
+            position: absolute;
+            font-size: 2rem;
+            left: 16.5px;
+            top: 17rem;
+            clip-path: inset(0% 0% 0% 0%);
+            rotate: 45deg
+        }
+
+        .circle span {
+            rotate: -45deg
+        }
+
+        .triangle span {
+            rotate: -90deg
+        }
+
+        .qr-code {
+            margin-top: 5rem;
+        }
+
+        .qr {
+            width: 4rem;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Why is A11Y a team effort?<span>Part 2</span></h1>
+        <div class="grid">
+            <div class=" left">
+                <div class="vLine"></div>
+                <div class="triangle"><span>1</span></div>
+                <div class="circle"><span>2</span></div>
+            </div>
+            <div class="right">
+                <div class="pain-points">
+                    <h2>Development</h3>
+                        <ul>
+                            <li>Implement correct structure & semantics</li>
+                            <li>Use native HTML elements</li>
+                            <li>Understand ARIA</li>
+                            <li>Do unit testing</li>
+                        </ul>
+                </div>
+                <div class="relief-points">
+                    <h2>test</h3>
+                        <ul>
+                            <li>Building specialisation and qualification in the team for A11Y testing</li>
+                            <li>Do automatic and manual testing</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid qr-code">
+        <div class="left">
+        </div>
+        <div class="grid">
+            <div class="smallcapital unknown fat">
+                <p>LEARN MORE</p>
+            </div>
+            <div>
+                <img src="./icons/sprinteins.com.svg" alt="QR code leading to more information" aria-label="QR code" class="qr">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

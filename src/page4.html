@@ -18,31 +18,42 @@
             margin-bottom: 1rem;
         }
 
-        .grid-container {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: auto;
-            grid-template-areas:
-                ". header"
-                "left-c right-c"
-                "left-c right-c"
-                "left-c right-c"
-        }
-
-        .header {
-            grid-area: header;
-        }
-
-        .left-content {
-            grid-area: left-c;
-        }
-
-        .right-content {
-            grid-area: right-c;
-        }
-
         p {
             all: unset;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        tr {
+            width: 50%;
+        }
+
+        tr:nth-child() {
+            text-align: left;
+        }
+
+        td {
+            width: 50%;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        .qr-code {
+            margin-top: 5rem;
+        }
+
+        .qr {
+            width: 4rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: end;
         }
     </style>
 
@@ -55,86 +66,118 @@
         <p>
             Accessibility helps people with all kinds of disabilities. Every person can also be temporarily or situationally limited at some point.
         </p>
-        <div class="grid-container">
-            <div class="header">
-                <h2>Mobility</h2>
-            </div>
-            <div class="left-content">
-                <h3 class="smallcapital">PERMANENT</h3>
-            </div>
-            <div class="right-content">
-                <p>Amputation</p>
-            </div>
-            <div class="left-content">
-                <h3 class="smallcapital">TEMPORARY</h3>
-            </div>
-            <div class="right-content">
-                <p>Injuries</p>
-            </div>
 
-            <div class="left-content">
-                <h3 class="smallcapital">SITUATIONAL</h3>
+        <table>
+            <tr>
+                <th class="category"></th>
+                <th>
+                    <h2>Mobility</h2>
+                </th>
+            </tr>
+            <tr>
+                <td class="smallcapital">
+                    <h3>Permanent</h3>
+                </td>
+                <td>Amputation</td>
+            </tr>
+            <tr>
+                <td class="smallcapital">
+                    <h3>Temporary</h3>
+                </td>
+                <td>Injuries</td>
+            </tr>
+            <tr>
+                <td class="smallcapital">
+                    <h3>Situational</h3>
+                </td>
+                <td>Holding a baby</td>
+            </tr>
+            <tr>
+                <th class="category"></th>
+                <th>
+                    <h2>Vision</h2>
+                </th>
+            </tr>
+            <tr>
+                <td class="smallcapital">
+                    <h3>Permanent</h3>
+                </td>
+                <td>Blindness, impairment</td>
+            </tr>
+            <tr>
+                <td class="smallcapital">
+                    <h3>Temporary</h3>
+                </td>
+                <td>Eye injury</td>
+            </tr>
+            <tr>
+                <td class="smallcapital">
+                    <h3>Situational</h3>
+                </td>
+                <td>Reflecting sunlight</td>
+            </tr>
+            <tr>
+                <th class="category"></th>
+                <th>
+                    <h2>Hearing</h2>
+                </th>
+            </tr>
+            <tr>
+                <td class="smallcapital">
+                    <h3>Permanent</h3>
+                </td>
+                <td>Deafness, hardness of hearing</td>
+            </tr>
+            <tr>
+                <td class="smallcapital">
+                    <h3>Temporary</h3>
+                </td>
+                <td>Infection, acute hearing loss</td>
+            </tr>
+            <tr>
+                <td class="smallcapital">
+                    <h3>Situational</h3>
+                </td>
+                <td>Background noises</td>
+            </tr>
+            <tr>
+                <th class="category"></th>
+                <th>
+                    <h2>Cognitive</h2>
+                </th>
+            </tr>
+            <tr>
+                <td class="smallcapital">
+                    <h3>Permanent</h3>
+                </td>
+                <td>Dementia, brain fog</td>
+            </tr>
+            <tr>
+                <td class="smallcapital">
+                    <h3>Temporary</h3>
+                </td>
+                <td>Migraine, fatigue</td>
+            </tr>
+            <tr>
+                <td class="smallcapital">
+                    <h3>Situational</h3>
+                </td>
+                <td>Multitasking</td>
+            </tr>
+        </table>
+
+        <div class="grid qr-code">
+            <div class="left">
             </div>
-            <div class="right-content">
-                <p>Amputation</p>
+            <div class="grid">
+                <div class="smallcapital unknown fat">
+                    <p>LEARN MORE</p>
+                </div>
+                <div>
+                    <img src="./icons/sprinteins.com.svg" alt="QR code leading to more information" aria-label="QR code" class="qr">
+                </div>
             </div>
         </div>
-    </div>
-    </div>
-    <div class="grid-container">
-
-        <div class="header">
-
-            <h2>Vision</h2>
-        </div>
-        <div class="left-content">
-            <h3 class="smallcapital">PERMANENT</h3>
-            <h3 class="smallcapital">TEMPORARY</h3>
-            <h3 class="smallcapital">SITUATIONAL</h3>
-        </div>
-        <div class="right-content">
-            <p>Blindness, impairment</p>
-            <p>Eye injury</p>
-            <p>Reflecting sunlight</p>
-        </div>
-    </div>
-    <div class="grid-container">
-        <div class="header">
-
-            <h2>Hearing</h2>
-        </div>
-        <div class="left-content">
-            <h3 class="smallcapital">PERMANENT</h3>
-            <h3 class="smallcapital">TEMPORARY</h3>
-            <h3 class="smallcapital">SITUATIONAL</h3>
-        </div>
-        <div class="right-content">
-            <p>Deafness, hardness of hearing</p>
-            <p>Infection, acute hearing loss</p>
-            <p>Background noises</p>
-        </div>
-    </div>
-    <div class="grid-container">
-        <div class="header">
-
-            <h2>Cognitive</h2>
-        </div>
-        <div class="left-content">
-            <h3 class="smallcapital">PERMANENT</h3>
-            <h3 class="smallcapital">TEMPORARY</h3>
-            <h3 class="smallcapital">SITUATIONAL</h3>
-        </div>
-        <div class="right-content">
-            <p>Dementia, brain fog</p>
-            <p>Migraine, fatigue</p>
-            <p>Multitasking</p>
-        </div>
-    </div>
-    </div>
-    <div class="qr-code">
-        <p>LEARN MORE:</p>
-        <img src="qr-code.png" alt="QR code leading to more information" aria-label="QR code">
-    </div>
     </div>
 </body>
 

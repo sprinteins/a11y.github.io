@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Reasons to Act Now!</title>
+    <link rel="stylesheet" href="./colors/index.css">
+    <link rel="stylesheet" href="font-faces.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        h1 span {
+            font-size: 2rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        ul li::before {
+            content: "_";
+            position: absolute;
+            left: -0.75rem;
+            top: 0;
+            color: #333;
+        }
+
+        .image-container {
+            margin-top: 2rem;
+            width: 100vw;
+            margin-left: -20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            align-items: end;
+            grid-gap: 1rem;
+        }
+
+        .vLine {
+            border-left: 1px solid black;
+            height: 100vh;
+            position: absolute;
+            left: 3rem;
+        }
+
+        .left {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .triangle {
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 4rem;
+            height: 4rem;
+            align-self: center;
+            background: black;
+            position: absolute;
+            font-size: 2rem;
+            left: 17px;
+            top: 2rem;
+            clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+        }
+
+        .circle {
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 4rem;
+            height: 4rem;
+            align-self: center;
+            background: black;
+            position: absolute;
+            font-size: 2rem;
+            left: 17px;
+            top: 17rem;
+            clip-path: circle(50%);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Why is A11Y a team effort?<span>Part 1</span></h1>
+        <div class="grid">
+            <div class=" left">
+                <div class="vLine"></div>
+                <div class="triangle">1</div>
+                <div class="circle">2</div>
+            </div>
+            <div class="right">
+                <div class="pain-points">
+                    <h2>Management & Product</h3>
+                        <ul>
+                            <li>Build awareness and knowledge about A11Y in the team</li>
+                            <li>Set A11Y goals</li>
+                            <li>Define clear A11Y requirements</li>
+                        </ul>
+                </div>
+                <div class="relief-points">
+                    <h2>Design</h3>
+                        <ul>
+                            <li>Create accessible text and multimedia content</li>
+                            <li>Consider all different types of user interaction, e.g. like keyboard users</li>
+                            <li>Design easy visual layouts and choose clear colors</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

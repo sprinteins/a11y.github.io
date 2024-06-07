@@ -12,6 +12,10 @@ body {
 	color: #333;
 }
 
+.container {
+	margin: 0.5rem;
+}
+
 h1,
 .h1 {
 	font-family: "HelveticaLTStd-Light", sans-serif;
@@ -20,6 +24,22 @@ h1,
 	line-height: 4.083rem; /* ZAB 49pt ≈ 4.083rem */
 	margin-block-start: 0.335em;
 	margin-block-end: 0.335em;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+h3 {
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 0.14em;
+	font-size: 1rem;
+}
+
+.colored-headline h2 {
+	font-family: "HelveticaLTStd-Light", "Helvetica Neue LT Pro", sans-serif;
+	font-weight: 300;
+	font-size: 2rem;
+	line-height: 1.5rem;
 }
 
 /* Class for H2 */

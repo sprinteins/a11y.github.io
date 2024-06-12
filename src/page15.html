@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Reasons to Act Now!</title>
+    <link rel="stylesheet" href="./colors/index.css">
+    <link rel="stylesheet" href="font-faces.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /*
+        */
+
+        .container {
+            margin: 0 auto;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding: 0;
+            padding-left: 0;
+            list-style-position: inside;
+        }
+
+        li {
+            counter-increment: item;
+            margin-bottom: 10px;
+            padding-left: 1.5rem;
+            /* Adds padding to keep text aligned */
+            text-indent: -1.5rem;
+            /* Moves first line back to align with numbers */
+        }
+
+        li:before {
+            content: counter(item);
+            width: 1.2em;
+            padding-right: 1rem;
+            text-align: center;
+            font-size: 1rem;
+            font-family: "SoinSansPro-Bold";
+        }
+
+        .gains {
+            all: unset;
+        }
+
+        .gains:before {
+            all: unset;
+        }
+
+        .gains h2 {
+            padding-left: 1.5rem;
+        }
+
+        .photo {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .photo img {
+            max-width: 100%;
+            position: absolute;
+            left: 0;
+            height: auto;
+        }
+    </style>
+
+
+</head>
+<!-- 
+    workaround idee
+    kästen oben und unten als html mit text
+    den flow chart mit alt text im bild
+ -->
+
+<body>
+    <div class="container">
+        <h1>Where to start?</h1>
+        <ol>
+
+        </ol>
+        <figure class="photo">
+            <div class="image-container">
+                <div class="overlay"></div>
+
+
+            </div>
+        </figure>
+    </div>
+
+</body>
+
+</html>

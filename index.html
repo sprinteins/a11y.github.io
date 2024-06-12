@@ -10,12 +10,16 @@
     .container {}
 
     .container iframe {
-      position: absolute;
       top: 150px;
       left: 0;
       width: 100%;
       height: 100%;
       border: 0;
+    }
+
+    iframe {
+      width: 100vw;
+      height: 100%;
     }
   </style>
 </head>
@@ -24,10 +28,10 @@
   <div id="nav" class="nav">
     <button onclick="loadPage('./src/indesign-export.html')">export</button>
     <!-- Add more buttons as needed -->
+    <a id="back" href="./src/page2.html">Back</a>
+    <a id="forward" href="./src/page3.html">Forward</a>
   </div>
-  <div class="container">
-
-    <iframe id="iframe" src="./src/page1.html" title="" allowfullscreen width="inherit"></iframe>
+  <div id="container" class="container">
   </div>
 
 </body>

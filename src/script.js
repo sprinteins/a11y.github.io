@@ -14,5 +14,20 @@ function renderButtons(amount) {
 		container.appendChild(button);
 	}
 }
+function renderIFrames(amount) {
+	const container = document.getElementById("container");
 
-renderButtons(pagesAmount);
+	for (let count = 0; count <= amount; count++) {
+		const el = document.createElement("iframe");
+		el.innerText = `page ${count}`;
+		el.src = `./src/page${count}.html`;
+		el.onLoad = onLoad.bind(el);
+		container.appendChild(el);
+	}
+}
+
+function onLoad() {
+	this.style.height = this.contentWindow.document.body.scrollHeight + "px";
+}
+
+// renderIFrames(pagesAmount);

@@ -12,10 +12,6 @@
         /*
         */
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
 
         ol {
             list-style: none;
@@ -24,6 +20,66 @@
             padding-left: 0;
             list-style-position: inside;
         }
+
+
+        .circle-container {
+            position: relative;
+            width: 100vw;
+            height: 37rem;
+            margin-top: 5rem;
+            margin-left: -1.25rem;
+        }
+
+        .circle {
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            text-align: center;
+        }
+
+        .circle-small {
+            width: 5rem;
+            height: 5rem;
+            background-color: #bfc5c4;
+            top: -2rem;
+            left: 4.6rem;
+        }
+
+        .circle-medium {
+            width: 10rem;
+            height: 10rem;
+            background-color: #6d7671;
+            top: 2.55rem;
+            left: -0.45rem;
+        }
+
+        .circle-large {
+            width: 15rem;
+            height: 15rem;
+            background-color: #5d6d6a;
+            top: -3.4rem;
+            right: 0.45rem;
+        }
+
+        .circle-xlarge {
+            width: 100vw;
+            height: 100vw;
+            background-color: #1e271a;
+            left: -0.5rem;
+            top: 11rem;
+        }
+
+        .circle span {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+
+        .circle .heart {
+            font-size: 24px;
+            color: white;
+        }
     </style>
 
 
@@ -31,8 +87,21 @@
 
 <body>
     <div class="container">
-        <h1>In Europe A11Y is for</h1>
-
+        <h1>In Europe A11Y is for Europe</h1>
+        <div class="circle-container">
+            <div class="circle circle-small">
+                <span><i class="heart">&#x2665;</i></span>
+            </div>
+            <div class="circle circle-medium">
+                <span>7%<br>essential</span>
+            </div>
+            <div class="circle circle-large">
+                <span>21%<br>supportive</span>
+            </div>
+            <div class="circle circle-xlarge">
+                <span>27%<br>necessary</span>
+            </div>
+        </div>
         <ol>
             <li>
                 <span class="fat">7% essential</span> — 31.2 million people
@@ -53,6 +122,8 @@
             </li>
         </ol>
         </li>
+
+
 
     </div>
 </body>

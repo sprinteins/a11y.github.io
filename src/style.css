@@ -10,10 +10,12 @@ body {
 	line-height: 1.6;
 	margin: 20px;
 	color: #333;
+	hyphens: auto;
 }
 
 .container {
 	margin: 0.5rem;
+	max-width: 500rem;
 }
 
 h1,
@@ -21,25 +23,11 @@ h1,
 	font-family: "HelveticaLTStd-Light", sans-serif;
 	font-weight: 300; /* Light */
 	font-size: 4.083rem; /* 49pt ≈ 4.083rem */
-	line-height: 4.083rem; /* ZAB 49pt ≈ 4.083rem */
+	line-height: 1.2; /* ZAB 49pt ≈ 4.083rem */
 	margin-block-start: 0.335em;
 	margin-block-end: 0.335em;
 	overflow: hidden;
 	word-wrap: break-word;
-}
-
-h3 {
-	text-transform: uppercase;
-	line-height: 1;
-	letter-spacing: 0.14em;
-	font-size: 1rem;
-}
-
-.colored-headline h2 {
-	font-family: "HelveticaLTStd-Light", "Helvetica Neue LT Pro", sans-serif;
-	font-weight: 300;
-	font-size: 2rem;
-	line-height: 1.5rem;
 }
 
 /* Class for H2 */
@@ -49,6 +37,20 @@ h2,
 	font-weight: 300; /* Light */
 	font-size: 2.5rem; /* 30pt ≈ 2.5rem */
 	line-height: 2.833rem; /* ZAB 34pt ≈ 2.833rem */
+}
+
+.colored-headline h2 {
+	font-family: "HelveticaLTStd-Light", "Helvetica Neue LT Pro", sans-serif;
+	font-weight: 300;
+	font-size: 2rem;
+	line-height: 1.5rem;
+}
+
+h3 {
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 0.14em;
+	font-size: 1rem;
 }
 
 /* Class for Subline */
@@ -73,6 +75,11 @@ h2,
 	font-weight: 300; /* Light */
 	font-size: 1rem; /**/
 	line-height: 1.267rem; /*  */
+}
+
+.helvetica {
+	font-family: "Helvetica Neue LT Pro", sans-serif;
+	font-weight: 400;
 }
 
 .highlight {

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Reasons to Act Now!</title>
+    <link rel="stylesheet" href="./colors/index.css">
+    <link rel="stylesheet" href="font-faces.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        h1 span {
+            font-size: 2rem;
+        }
+
+        h3 {
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 0.3rem;
+        }
+
+        ul li {
+            position: relative;
+        }
+
+        ul li::before {
+            content: "_";
+            position: absolute;
+            left: -0.75rem;
+            top: 0;
+            color: #333;
+        }
+
+        .image-container {
+            margin-top: 2rem;
+            width: 100vw;
+            margin-left: -20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: end;
+        }
+
+        .left {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .qr-code {
+            margin-top: 1rem;
+        }
+
+        .qr {
+            width: 4rem;
+        }
+
+        .note {
+            margin-top: 6rem;
+        }
+
+        .learn {
+            font-size: 0.75rem;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>How can web technologies support A11Y?</h1>
+        <div class="main-content">
+            <h2 class="copy">HTML, CSS and JavaScript are already a good foundation for A11Y, if used correctly.</h2>
+            <h3 class="smallcapital">Questions? Talk to our development-team.</h3>
+        </div>
+        <div class="note">
+            <h3 class="smallcapital">Please Note:</h3>
+            <p>Always try to sustain digital accessibility through considerations such as</p>
+            <ul>
+                <li>align semantic & visual meaning</li>
+                <li>unobtrusive use</li>
+                <li>keep keyboard interaction in mind</li>
+                <li>and more!</li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid qr-code">
+        <div class="left">
+        </div>
+        <div class="grid">
+            <div class="smallcapital unknown fat learn">
+                <p>Learn More:</p>
+            </div>
+            <div>
+                <img src="./icons/sprinteins.com.svg" alt="QR code leading to more information" aria-label="QR code" class="qr">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

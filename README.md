@@ -53,3 +53,12 @@ Copy
 Helvetica Neue LT Pro 
 Light
 20pt / ZAB 24pt
+
+## Notes
+
+- pagination?
+  - swiping?
+  - burger menu
+  - pfeil links/rechts
+  - Seite von X / 22 Auswahl
+-

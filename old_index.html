@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <style>
+    .container {}
+
+    body {
+      width: 100%;
+    }
+
+    .container iframe {
+      top: 150px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    iframe {
+      width: 100vw;
+      height: 100%;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      font-size: 1rem;
+      height: 100vh;
+      position: absolute;
+      /* Position them relative to the browser window */
+      /* Position them outside of the screen */
+      transition: 0.3s;
+      /* Add transition on hover */
+      padding: 15px;
+      /* 15px padding */
+      width: 100px;
+      /* Set a specific width */
+      text-decoration: none;
+      /* Remove underline */
+      font-size: 20px;
+      /* Increase font size */
+      color: white;
+      /* White text color */
+      border-radius: 0 5px 5px 0;
+      /* Rounded corners on the top right and bottom right side */
+    }
+
+    #back {
+      left: -80px;
+    }
+
+    #forward {
+      right: -80px;
+    }
+
+    #back:hover {
+      left: 0;
+    }
+
+    #forward:hover {
+      right: 0;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <button onclick="loadPage('./src/indesign-export.html')">export</button>
+    <!-- Add more buttons as needed -->
+    <div class="nav-buttons">
+
+      <a id="back" href="./src/page0.html"></a>
+      <a id="forward" href="./src/page3.html"></a>
+    </div>
+  </div>
+  <div id="container" class="container">
+  </div>
+
+</body>
+
+</html>
+
+<script src="./src/script.js"></script>

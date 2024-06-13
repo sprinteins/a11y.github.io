@@ -9,25 +9,25 @@
     <link rel="stylesheet" href="font-faces.css">
     <link rel="stylesheet" href="./style.css">
     <style>
-        h1 span {
+        .page16-container h1 span {
             font-size: 2rem;
         }
 
-        h2 {
+        .page16-container h2 {
             margin-bottom: 1rem;
         }
 
-        ul {
+        .page16-container ul {
             list-style-type: none;
             padding: 0;
         }
 
-        ul li {
+        .page16-container ul li {
             position: relative;
             margin-bottom: 10px;
         }
 
-        ul li::before {
+        .page16-container ul li::before {
             content: "_";
             position: absolute;
             left: -0.75rem;
@@ -35,38 +35,38 @@
             color: #333;
         }
 
-        .image-container {
+        .page16-image-container {
             margin-top: 2rem;
             width: 100vw;
             margin-left: -20px;
         }
 
-        .image-container img {
+        .page16-image-container img {
             width: 100%;
             height: auto;
         }
 
-        .grid {
+        .page16-grid {
             display: grid;
             grid-template-columns: 30% 70%;
             align-items: end;
             grid-gap: 1rem;
         }
 
-        .vLine {
+        .page16-vLine {
             border-left: 1px solid lightgray;
             height: 100vh;
             position: absolute;
             left: 3rem;
         }
 
-        .left {
+        .page16-left {
             width: 100%;
             height: 100%;
             position: relative;
         }
 
-        .triangle {
+        .page16-triangle {
             color: white;
             display: flex;
             justify-content: center;
@@ -83,7 +83,7 @@
             clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
         }
 
-        .circle {
+        .page16-circle {
             color: white;
             display: flex;
             justify-content: center;
@@ -105,34 +105,41 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page16-container">
         <h1>Why is A11Y a team effort?<span>Part 1</span></h1>
-        <div class="grid">
-            <div class=" left">
-                <div class="vLine"></div>
-                <div class="triangle">1</div>
-                <div class="circle">2</div>
+        <div class="page16-grid">
+            <div class="page16- page16-left">
+                <div class="page16-vLine"></div>
+                <div class="page16-triangle">1</div>
+                <div class="page16-circle">2</div>
             </div>
-            <div class="right">
-                <div class="pain-points">
-                    <h2>Management & Product</h3>
-                        <ul>
-                            <li>Build awareness and knowledge about A11Y in the team</li>
-                            <li>Set A11Y goals</li>
-                            <li>Define clear A11Y requirements</li>
-                        </ul>
+            <div class="page16-right">
+                <div class="page16-pain-points">
+                    <h2>Management &amp; Product</h2>
+                    <ul>
+                        <li>Build awareness and knowledge about A11Y in the team</li>
+                        <li>Set A11Y goals</li>
+                        <li>Define clear A11Y requirements</li>
+                    </ul>
                 </div>
-                <div class="relief-points">
-                    <h2>Design</h3>
-                        <ul>
-                            <li>Create accessible text and multimedia content</li>
-                            <li>Consider all different types of user interaction, e.g. like keyboard users</li>
-                            <li>Design easy visual layouts and choose clear colors</li>
-                        </ul>
+                <div class="page16-relief-points">
+                    <h2>Design</h2>
+                    <ul>
+                        <li>Create accessible text and multimedia content</li>
+                        <li>Consider all different types of user interaction, e.g. like keyboard users</li>
+                        <li>Design easy visual layouts and choose clear colors</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(16)
+</script>

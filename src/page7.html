@@ -9,38 +9,36 @@
     <link rel="stylesheet" href="font-faces.css">
     <link rel="stylesheet" href="./style.css">
     <style>
-        h3 {}
-
-        h2 {
+        .page7-container h2 {
             margin-bottom: 1rem;
         }
 
 
-        .pain-points h2 {
+        .page7-pain-points h2 {
             color: #e57373;
             /* Light red */
             /* Adjust size as needed */
             margin-bottom: 10px;
         }
 
-        .relief-points h2 {
+        .page7-relief-points h2 {
             color: #4caf50;
             /* Green */
             /* Adjust size as needed */
             margin-bottom: 10px;
         }
 
-        ul {
+        .page7-container ul {
             list-style-type: none;
             padding: 0;
         }
 
-        ul li {
+        .page7-container ul li {
             position: relative;
             margin-bottom: 10px;
         }
 
-        ul li::before {
+        .page7-container ul li::before {
             content: "_";
             position: absolute;
             left: -0.75rem;
@@ -48,13 +46,13 @@
             color: #333;
         }
 
-        .image-container {
+        .page7-image-container {
             margin-top: 2rem;
             width: 100vw;
             margin-left: -20px;
         }
 
-        .image-container img {
+        .page7-image-container img {
             width: 100%;
             height: auto;
         }
@@ -62,32 +60,39 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page7-container">
         <h1>Blindness</h1>
-        <div class="pain-points colored-headline">
-            <h2>Pain points</h3>
-                <ul>
-                    <li>Forced to use click or touch input</li>
-                    <li>Unstructured content</li>
-                    <li>Uninformative or meaningless headings and labels</li>
-                    <li>Important information only in image or video content</li>
-                </ul>
+        <div class="page7-pain-points colored-headline">
+            <h2>Pain points</h2>
+            <ul>
+                <li>Forced to use click or touch input</li>
+                <li>Unstructured content</li>
+                <li>Uninformative or meaningless headings and labels</li>
+                <li>Important information only in image or video content</li>
+            </ul>
         </div>
-        <div class="relief-points colored-headline">
-            <h2>How to relieve them</h3>
-                <ul>
-                    <li>Provide screen reader functionality</li>
-                    <li>Semantic content using HTML5</li>
-                    <li>Use descriptive labels, headings and links</li>
-                    <li>Describe images & transcribe videos</li>
-                </ul>
+        <div class="page7-relief-points colored-headline">
+            <h2>How to relieve them</h2>
+            <ul>
+                <li>Provide screen reader functionality</li>
+                <li>Semantic content using HTML5</li>
+                <li>Use descriptive labels, headings and links</li>
+                <li>Describe images &amp; transcribe videos</li>
+            </ul>
         </div>
     </div>
 
-    </div>
-    <div class="image-container">
+
+    <div class="page7-image-container">
         <img src="./images/blind.png" alt="Older user typing on a keyboard">
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(7)
+</script>

@@ -9,32 +9,32 @@
     <link rel="stylesheet" href="font-faces.css">
     <link rel="stylesheet" href="./style.css">
     <style>
-        h1 span {
+        .page18-container h1 span {
             font-size: 2rem;
         }
 
-        h3 {
+        .page18-container h3 {
             padding: 0;
             margin: 0;
         }
 
-        p {
+        .page18-container p {
             padding: 0;
             margin: 0;
         }
 
 
-        ul {
+        .page18-container ul {
             list-style-type: none;
             padding: 0;
             margin-top: 0.3rem;
         }
 
-        ul li {
+        .page18-container ul li {
             position: relative;
         }
 
-        ul li::before {
+        .page18-container ul li::before {
             content: "_";
             position: absolute;
             left: -0.75rem;
@@ -42,42 +42,42 @@
             color: #333;
         }
 
-        .image-container {
+        .page18-image-container {
             margin-top: 2rem;
             width: 100vw;
             margin-left: -20px;
         }
 
-        .image-container img {
+        .page18-image-container img {
             width: 100%;
             height: auto;
         }
 
-        .grid {
+        .page18-grid {
             display: grid;
             grid-template-columns: 50% 50%;
             align-items: end;
         }
 
-        .left {
+        .page18-left {
             width: 100%;
             height: 100%;
             position: relative;
         }
 
-        .qr-code {
+        .page18-qr-code {
             margin-top: 1rem;
         }
 
-        .qr {
+        .page18-qr {
             width: 4rem;
         }
 
-        .note {
+        .page18-note {
             margin-top: 6rem;
         }
 
-        .learn {
+        .page18-learn {
             font-size: 0.75rem;
         }
     </style>
@@ -86,35 +86,42 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page18-container">
         <h1>How can web technologies support A11Y?</h1>
-        <div class="main-content">
+        <div class="page18-main-content">
             <h2 class="copy">HTML, CSS and JavaScript are already a good foundation for A11Y, if used correctly.</h2>
             <h3 class="smallcapital">Questions? Talk to our development-team.</h3>
         </div>
-        <div class="note">
+        <div class="page18-note">
             <h3 class="smallcapital">Please Note:</h3>
             <p>Always try to sustain digital accessibility through considerations such as</p>
             <ul>
-                <li>align semantic & visual meaning</li>
+                <li>align semantic &amp; visual meaning</li>
                 <li>unobtrusive use</li>
                 <li>keep keyboard interaction in mind</li>
                 <li>and more!</li>
             </ul>
         </div>
     </div>
-    <div class="grid qr-code">
-        <div class="left">
+    <div class="page18-grid page18-qr-code">
+        <div class="page18-left">
         </div>
-        <div class="grid">
-            <div class="smallcapital unknown fat learn">
+        <div class="page18-grid">
+            <div class="smallcapital unknown fat page18-learn">
                 <p>Learn More:</p>
             </div>
             <div>
-                <img src="./images/qr-codes/w3g.aria.svg" alt="QR code leading to more information" aria-label="QR code" class="qr">
+                <img src="./images/qr-codes/w3g.aria.svg" alt="QR code leading to more information" aria-label="QR code" class="page18-qr">
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(18)
+</script>

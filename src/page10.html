@@ -9,22 +9,22 @@
     <link rel="stylesheet" href="font-faces.css">
     <link rel="stylesheet" href="./style.css">
     <style>
-        h3 {
+        .page10-container h3 {
             padding: 0;
             margin: 0;
         }
 
-        p {
+        .page10-container p {
             all: unset;
         }
 
-        .grid {
+        .page10-grid {
             display: grid;
             grid-template-columns: 50% 50%;
             align-items: end;
         }
 
-        ol {
+        .page10-container ol {
             list-style: none;
             counter-reset: item;
             padding: 0;
@@ -33,14 +33,14 @@
             margin-top: 2rem;
         }
 
-        .tech-item {
+        .page10-tech-item {
             display: grid;
             grid-template-columns: 20% 80%;
             column-gap: 1rem;
             margin-bottom: 1.5rem;
         }
 
-        .tech-item img {
+        .page10-tech-item img {
             max-width: 100%;
         }
     </style>
@@ -49,52 +49,52 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page10-container">
         <h1>How can <span class="fat">assistive technologies</span> help?</h1>
         <h2 class="unknown">
             Navigating digital content with disabilities can be challenging. But there are technologies to help with that.
         </h2>
         <ol>
             <li>
-                <div class="tech-item">
+                <div class="page10-tech-item">
                     <img src="./icons/icon_9_read.svg" alt="Screen Reader Icon">
-                    <div class="item-text">
+                    <div class="page10-item-text">
                         <h3>Screen Reader</h3>
                         <p>Helps people to perceive content of a website through conversion to other formats such as speech or braille.</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="tech-item">
+                <div class="page10-tech-item">
                     <img src="./icons/icon_8.svg" alt="Braille Display Icon">
-                    <div class="item-text">
+                    <div class="page10-item-text">
                         <h3>Braille Display</h3>
                         <p>Computer output device for blind people that displays characters in braille.</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="tech-item">
+                <div class="page10-tech-item">
                     <img src="./icons/icon_7_sound.svg" alt="Voice Control Icon">
-                    <div class="item-text">
+                    <div class="page10-item-text">
                         <h3>Voice Control</h3>
                         <p>Input and output is done via spoken language.</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="tech-item">
+                <div class="page10-tech-item">
                     <img src="./icons/icon_6_trade.svg" alt="Sip-and-Puff Switches Icon">
-                    <div class="item-text">
+                    <div class="page10-item-text">
                         <h3>Sip-and-Puff Switches</h3>
                         <p>This switch translates sips and puffs into independent switch closures.</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="tech-item">
+                <div class="page10-tech-item">
                     <img src="./icons/icon_5_search.svg" alt="Screen Magnifier Icon">
-                    <div class="item-text">
+                    <div class="page10-item-text">
                         <h3>Screen Magnifier</h3>
                         <p>Helps people to see content of a web page.</p>
                     </div>
@@ -102,6 +102,13 @@
             </li>
         </ol>
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(10)
+</script>

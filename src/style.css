@@ -77,6 +77,13 @@ h3 {
 	line-height: 1.267rem; /*  */
 }
 
+.unknown2 {
+	font-family: "HelveticaLTStd-Light", sans-serif;
+	font-weight: 300; /* Light */
+	font-size: 1.2rem; /**/
+	line-height: 1.267rem; /*  */
+}
+
 .helvetica {
 	font-family: "Helvetica Neue LT Pro", sans-serif;
 	font-weight: 400;
@@ -97,4 +104,15 @@ h3 {
 .fat {
 	font-family: HelveticaLTStd-Bold;
 	font-weight: 700;
+}
+
+.navigation-wrapper {
+	top: 0;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+}
+
+.navigation-wrapper a {
+	margin: 0 0.5rem;
 }

@@ -9,38 +9,35 @@
     <link rel="stylesheet" href="font-faces.css">
     <link rel="stylesheet" href="./style.css">
     <style>
-        h3 {}
-
-        h2 {
+        .page6-container h2 {
             margin-bottom: 1rem;
         }
 
-
-        .pain-points h2 {
+        .page6-pain-points h2 {
             color: #e57373;
             /* Light red */
             /* Adjust size as needed */
             margin-bottom: 10px;
         }
 
-        .relief-points h2 {
+        .page6-relief-points h2 {
             color: #4caf50;
             /* Green */
             /* Adjust size as needed */
             margin-bottom: 10px;
         }
 
-        ul {
+        .page6-container ul {
             list-style-type: none;
             padding: 0;
         }
 
-        ul li {
+        .page6-container ul li {
             position: relative;
             margin-bottom: 10px;
         }
 
-        ul li::before {
+        .page6-container ul li::before {
             content: "_";
             position: absolute;
             left: -0.75rem;
@@ -48,13 +45,13 @@
             color: #333;
         }
 
-        .image-container {
+        .page6-image-container {
             margin-top: 2rem;
             width: 100vw;
             margin-left: -20px;
         }
 
-        .image-container img {
+        .page6-image-container img {
             width: 100%;
             height: auto;
         }
@@ -64,32 +61,39 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page6-container">
         <h1>Motor disabilities</h1>
-        <div class="pain-points colored-headline">
-            <h2>Pain points</h3>
-                <ul>
-                    <li>Dynamic components that require quick mouse movements</li>
-                    <li>Short time outs for interactions</li>
-                    <li>Bundled interactions together</li>
-                    <li>Forced precise interactions</li>
-                </ul>
+        <div class="page6-pain-points colored-headline">
+            <h2>Pain points</h2>
+            <ul>
+                <li>Dynamic components that require quick mouse movements</li>
+                <li>Short time outs for interactions</li>
+                <li>Bundled interactions together</li>
+                <li>Forced precise interactions</li>
+            </ul>
         </div>
-        <div class="relief-points colored-headline">
-            <h2>How to relieve them</h3>
-                <ul>
-                    <li>Design for keyboard and / or speech input</li>
-                    <li>Visible focus</li>
-                    <li>Provide shortcuts</li>
-                    <li>Give form fields space</li>
-                </ul>
+        <div class="page6-relief-points colored-headline">
+            <h2>How to relieve them</h2>
+            <ul>
+                <li>Design for keyboard and / or speech input</li>
+                <li>Visible focus</li>
+                <li>Provide shortcuts</li>
+                <li>Give form fields space</li>
+            </ul>
         </div>
     </div>
 
-    </div>
-    <div class="image-container">
+
+    <div class="page6-image-container">
         <img src="./images/mother_kid.png" alt="Older user typing on a keyboard">
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(6)
+</script>

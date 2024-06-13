@@ -13,7 +13,7 @@
         */
 
 
-        ol {
+        .page2-container ol {
             list-style: none;
             counter-reset: item;
             padding: 0;
@@ -22,7 +22,7 @@
         }
 
 
-        .circle-container {
+        .page2-circle-container {
             position: relative;
             width: 100vw;
             height: 37rem;
@@ -30,7 +30,7 @@
             margin-left: -1.25rem;
         }
 
-        .circle {
+        .page2-circle {
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -39,7 +39,7 @@
             text-align: center;
         }
 
-        .circle-small {
+        .page2-circle-small {
             width: 5rem;
             height: 5rem;
             background-color: #bfc5c4;
@@ -47,7 +47,7 @@
             left: 4.6rem;
         }
 
-        .circle-medium {
+        .page2-circle-medium {
             width: 10rem;
             height: 10rem;
             background-color: #6d7671;
@@ -55,7 +55,7 @@
             left: -0.45rem;
         }
 
-        .circle-large {
+        .page2-circle-large {
             width: 15rem;
             height: 15rem;
             background-color: #5d6d6a;
@@ -63,7 +63,7 @@
             right: 0.45rem;
         }
 
-        .circle-xlarge {
+        .page2-circle-xlarge {
             width: 100vw;
             height: 100vw;
             background-color: #1e271a;
@@ -71,12 +71,12 @@
             top: 11rem;
         }
 
-        .circle span {
+        .page2-circle span {
             font-size: 20px;
             line-height: 1.2;
         }
 
-        .circle .heart {
+        .page2-circle .page2-heart {
             font-size: 24px;
             color: white;
         }
@@ -86,19 +86,19 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page2-container">
         <h1>In Europe A11Y is for Europe</h1>
-        <div class="circle-container">
-            <div class="circle circle-small">
-                <span><i class="heart">&#x2665;</i></span>
+        <div class="page2-circle-container">
+            <div class="page2-circle page2-circle-small">
+                <span><i class="page2-heart">♥</i></span>
             </div>
-            <div class="circle circle-medium">
+            <div class="page2-circle page2-circle-medium">
                 <span>7%<br>essential</span>
             </div>
-            <div class="circle circle-large">
+            <div class="page2-circle page2-circle-large">
                 <span>21%<br>supportive</span>
             </div>
-            <div class="circle circle-xlarge">
+            <div class="page2-circle page2-circle-xlarge">
                 <span>27%<br>necessary</span>
             </div>
         </div>
@@ -121,11 +121,18 @@
                 A11Y is for
             </li>
         </ol>
-        </li>
+
 
 
 
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(2)
+</script>

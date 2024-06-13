@@ -1,15 +1,24 @@
 {
-  "name": "fan",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0"
-  }
+	"name": "fan",
+	"private": true,
+	"version": "0.0.0",
+	"type": "commonjs",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"postcss-load-config": "^6.0.1",
+		"typescript": "^5.2.2",
+		"vite": "^5.2.0",
+		"autoprefixer": "^10.4.19",
+		"cheerio": "^1.0.0-rc.12",
+		"html-autoprefixer": "^0.3.8",
+		"postcss": "^8.4.38",
+		"postcss-cli": "^11.0.0",
+		"postcss-html": "^1.7.0",
+		"postcss-prefixer": "^3.0.0"
+	},
+	"dependencies": {}
 }

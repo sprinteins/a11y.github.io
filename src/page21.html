@@ -13,7 +13,7 @@
             margin: 0;
         }
 
-        .container {
+        .page21-container {
             margin: 2rem;
             margin-bottom: 0;
         }
@@ -37,27 +37,27 @@
             margin: 0;
         }
 
-        .date {
+        .page21-date {
             font-size: 5rem;
             /* Adjust size as needed */
             margin: 0;
         }
 
-        .subtitle {
+        .page21-subtitle {
             font-size: 1.5rem;
             /* Adjust size as needed */
             margin-top: 0;
             margin-bottom: 30px;
         }
 
-        .circle-container {
+        .page21-circle-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 30px;
         }
 
-        .circle {
+        .page21-circle {
             position: relative;
             width: 20rem;
             height: 20rem;
@@ -68,17 +68,17 @@
             color: white;
         }
 
-        .circle.yes {
+        .page21-circle.page21-yes {
             background-color: #7a8787;
             /* Adjust color as needed */
         }
 
-        .circle.no {
+        .page21-circle.page21-no {
             background-color: #1d2626;
             right: -2.21rem;
         }
 
-        .thank-you {
+        .page21-thank-you {
             font-size: 1.2rem;
             text-align: left;
             margin: 2rem;
@@ -86,7 +86,7 @@
             line-height: 1.2;
         }
 
-        .contact {
+        .page21-contact {
             font-size: 1.2rem;
             text-align: left;
             margin: 2rem;
@@ -94,53 +94,53 @@
             line-height: 1.2;
         }
 
-        .qr-code {
+        .page21-qr-code {
             margin: 1rem 0;
             width: 4rem;
         }
 
-        .website {
+        .page21-website {
             font-size: 0.75rem;
             font-weight: bold;
         }
 
-        .logo {
+        .page21-logo {
             width: 50vw;
         }
 
-        .header {
+        .page21-header {
             width: 100%;
             margin-top: 4rem;
             margin-bottom: 2rem;
         }
 
-        .ready {
+        .page21-ready {
             font-weight: 900;
             font-size: 2.8rem;
             line-height: 1.6;
         }
 
-        .grid {
+        .page21-grid {
             position: relative;
             display: grid;
             z-index: 3;
             grid-template-columns: 50% 50%;
         }
 
-        .circle-wrapper {
+        .page21-circle-wrapper {
             position: relative;
             top: -4rem;
         }
 
-        .yes .text {
+        .page21-yes .page21-text {
             left: 15%;
         }
 
-        .no .text {
+        .page21-no .page21-text {
             left: 15%;
         }
 
-        .text {
+        .page21-text {
             position: relative;
         }
     </style>
@@ -149,37 +149,43 @@
 </head>
 
 <body>
-    <div class="container">
-        <img src="./images/SPRINTEINS-52x6,5_1c_Logo.svg" alt="SprintEins" class="logo">
-        <div class="header">
-            <h2 class="date">28.06.25</h2>
-            <h2 class="copy ready">Are you ready?</h2>
+    <div class="page21-container">
+        <img src="./images/SPRINTEINS-52x6,5_1c_Logo.svg" alt="SprintEins" class="page21-logo">
+        <div class="page21-header">
+            <h2 class="page21-date">28.06.25</h2>
+            <h2 class="copy page21-ready">Are you ready?</h2>
         </div>
 
     </div>
-    <div class="grid">
+    <div class="page21-grid">
         <div>
-            <div class="circle yes">
-                <div class="text">yes</div>
+            <div class="page21-circle page21-yes">
+                <div class="page21-text">yes</div>
             </div>
         </div>
-        <div class="thank-you helvetica">
+        <div class="page21-thank-you page21-helvetica">
             <strong>Thank you</strong>
             <p>for making the world more accessible!</p>
         </div>
-        <div class="contact helvetica">
+        <div class="page21-contact page21-helvetica">
             <p><span>Don't hesitate to <strong>contact</strong> us for help.</span></p>
-            <img src="./image/QR_Code5938-145979645.png" alt="QR Code" class="qr-code">
+            <img src="./image/QR_Code5938-145979645.png" alt="QR Code" class="page21-qr-code">
         </div>
-        <div class="circle-wrapper">
-            <div class="circle no">
-                <div class="text">no</div>
+        <div class="page21-circle-wrapper">
+            <div class="page21-circle page21-no">
+                <div class="page21-text">no</div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <p class="smallcapital website">WWW.SPRINTEINS.COM</p>
+    <div class="page21-container">
+        <p class="smallcapital page21-website">WWW.SPRINTEINS.COM</p>
     </div>
+
+
 </body>
 
 </html>
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(21)
+</script>

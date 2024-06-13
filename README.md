@@ -62,3 +62,13 @@ Light
   - pfeil links/rechts
   - Seite von X / 22 Auswahl
 -
+
+# Navigation
+
+- back/forward
+- alles auf einer Seite
+  - iframes untereinander?
+    - kompliziert wegen der höhe der iframes
+  - alles htmls zu einem html machen
+    - kompliziert die alle zusammenzufassen da css klassen namen sich wiederholen
+  -

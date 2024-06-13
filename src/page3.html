@@ -12,11 +12,11 @@
         /*
         */
 
-        .container {
+        .page3-container {
             margin: 0 auto;
         }
 
-        ol {
+        .page3-container ol {
             list-style: none;
             counter-reset: item;
             padding: 0;
@@ -24,7 +24,7 @@
             list-style-position: inside;
         }
 
-        li {
+        .page3-container li {
             counter-increment: item;
             margin-bottom: 10px;
             padding-left: 1.5rem;
@@ -33,7 +33,7 @@
             /* Moves first line back to align with numbers */
         }
 
-        li:before {
+        .page3-container li:before {
             content: counter(item);
             width: 1.2em;
             padding-right: 0.5rem;
@@ -42,15 +42,8 @@
             font-family: "SoinSansPro-Bold";
         }
 
-        .gains {
-            all: unset;
-        }
 
-        .gains:before {
-            all: unset;
-        }
-
-        .gains h2 {
+        .page3-gains {
             padding-left: 1.5rem;
         }
     </style>
@@ -59,7 +52,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page3-container">
         <h1>4 reasons to act now!</h1>
         <ol>
             <li class="copy">
@@ -77,30 +70,22 @@
                     implementation scope</span>
             </li>
         </ol>
-        <ol class="gains">
-            <li class="gains">
-                <h2 class="subline smallcapital">5 Gains for Free</h2>
-            </li>
-        </ol>
+        <h2 class="page3-gains subline smallcapital">5 Gains for Free</h2>
         <ol>
-            <li class="copy">
-                Improved usability leads to increased user satisfaction
-            </li>
-            <li class="copy">
-                Improved SEO
-            </li>
-            <li class="copy">
-                Increase of potential customer groups
-            </li>
-            <li class="copy">
-                Overcomes technical limitations such as small displays or situational
-                constraints
-            </li>
-            <li class="copy">
-                Lower customer support efforts
-            </li>
+            <li class="unknown2">Improved usability leads to increased user satisfaction</li>
+            <li class="unknown2">Improved SEO</li>
+            <li class="unknown2">Increase of potential customer groups</li>
+            <li class="unknown2">Overcomes technical limitations such as small displays or situational constraints</li>
+            <li class="unknown2">Lower customer support efforts</li>
         </ol>
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(3)
+</script>

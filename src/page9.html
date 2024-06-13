@@ -9,38 +9,38 @@
     <link rel="stylesheet" href="font-faces.css">
     <link rel="stylesheet" href="./style.css">
     <style>
-        h3 {}
+        .page9-container h3 {}
 
-        h2 {
+        .page9-container h2 {
             margin-bottom: 1rem;
         }
 
 
-        .pain-points h2 {
+        .page9-pain-points h2 {
             color: #e57373;
             /* Light red */
             /* Adjust size as needed */
             margin-bottom: 10px;
         }
 
-        .relief-points h2 {
+        .page9-relief-points h2 {
             color: #4caf50;
             /* Green */
             /* Adjust size as needed */
             margin-bottom: 10px;
         }
 
-        ul {
+        .page9-container ul {
             list-style-type: none;
             padding: 0;
         }
 
-        ul li {
+        .page9-container ul li {
             position: relative;
             margin-bottom: 10px;
         }
 
-        ul li::before {
+        .page9-container ul li::before {
             content: "_";
             position: absolute;
             left: -0.75rem;
@@ -48,13 +48,13 @@
             color: #333;
         }
 
-        .image-container {
+        .page9-image-container {
             margin-top: 2rem;
             width: 100vw;
             margin-left: -20px;
         }
 
-        .image-container img {
+        .page9-image-container img {
             width: 100%;
             height: auto;
         }
@@ -62,35 +62,42 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page9-container">
         <h1>Reading disabilities</h1>
-        <div class="pain-points colored-headline">
-            <h2>Pain points</h3>
-                <ul>
-                    <li>Large blocks of complex text</li>
-                    <li>Forced to remember things</li>
-                    <li>Capital letters, underlined/italic text</li>
-                    <li>Too much textual information</li>
-                </ul>
+        <div class="page9-pain-points colored-headline">
+            <h2>Pain points</h2>
+            <ul>
+                <li>Large blocks of complex text</li>
+                <li>Forced to remember things</li>
+                <li>Capital letters, underlined/italic text</li>
+                <li>Too much textual information</li>
+            </ul>
         </div>
-        <div class="relief-points colored-headline">
-            <h2>How to relieve them</h3>
-                <ul>
-                    <li>Keep content short, clear and simple</li>
-                    <li>Consistent navigation & identification</li>
-                    <li>Linear and logical structure</li>
-                    <li>Combination shape, colors and text</li>
-                    <li>Provide multi-channel support</li>
-                    <li>Use linear logical layout</li>
-                    <li>Two way voice-communication</li>
-                </ul>
+        <div class="page9-relief-points colored-headline">
+            <h2>How to relieve them</h2>
+            <ul>
+                <li>Keep content short, clear and simple</li>
+                <li>Consistent navigation &amp; identification</li>
+                <li>Linear and logical structure</li>
+                <li>Combination shape, colors and text</li>
+                <li>Provide multi-channel support</li>
+                <li>Use linear logical layout</li>
+                <li>Two way voice-communication</li>
+            </ul>
         </div>
     </div>
 
-    </div>
-    <div class="image-container">
+
+    <div class="page9-image-container">
         <img src="./images/ear_aid.png" alt="Older user typing on a keyboard">
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(9)
+</script>

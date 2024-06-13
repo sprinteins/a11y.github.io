@@ -9,25 +9,25 @@
     <link rel="stylesheet" href="font-faces.css">
     <link rel="stylesheet" href="./style.css">
     <style>
-        h1 span {
+        .page17-container h1 span {
             font-size: 2rem;
         }
 
-        h2 {
+        .page17-container h2 {
             margin-bottom: 1rem;
         }
 
-        ul {
+        .page17-container ul {
             list-style-type: none;
             padding: 0;
         }
 
-        ul li {
+        .page17-container ul li {
             position: relative;
             margin-bottom: 10px;
         }
 
-        ul li::before {
+        .page17-container ul li::before {
             content: "_";
             position: absolute;
             left: -0.75rem;
@@ -35,38 +35,38 @@
             color: #333;
         }
 
-        .image-container {
+        .page17-image-container {
             margin-top: 2rem;
             width: 100vw;
             margin-left: -20px;
         }
 
-        .image-container img {
+        .page17-image-container img {
             width: 100%;
             height: auto;
         }
 
-        .grid {
+        .page17-grid {
             display: grid;
             grid-template-columns: 30% 70%;
             align-items: end;
             grid-gap: 1rem;
         }
 
-        .vLine {
+        .page17-vLine {
             border-left: 1px solid lightgray;
             height: 110%;
             position: absolute;
             left: 3rem;
         }
 
-        .left {
+        .page17-left {
             width: 100%;
             height: 100%;
             position: relative;
         }
 
-        .triangle {
+        .page17-triangle {
             color: white;
             display: flex;
             justify-content: center;
@@ -84,7 +84,7 @@
             rotate: 90deg
         }
 
-        .circle {
+        .page17-circle {
             color: white;
             display: flex;
             justify-content: center;
@@ -102,19 +102,19 @@
             rotate: 45deg
         }
 
-        .circle span {
+        .page17-circle span {
             rotate: -45deg
         }
 
-        .triangle span {
+        .page17-triangle span {
             rotate: -90deg
         }
 
-        .qr-code {
+        .page17-qr-code {
             margin-top: 5rem;
         }
 
-        .qr {
+        .page17-qr {
             width: 4rem;
         }
     </style>
@@ -123,46 +123,53 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page17-container">
         <h1>Why is A11Y a team effort?<span>Part 2</span></h1>
-        <div class="grid">
-            <div class=" left">
-                <div class="vLine"></div>
-                <div class="triangle"><span>3</span></div>
-                <div class="circle"><span>4</span></div>
+        <div class="page17-grid">
+            <div class="page17- page17-left">
+                <div class="page17-vLine"></div>
+                <div class="page17-triangle"><span>3</span></div>
+                <div class="page17-circle"><span>4</span></div>
             </div>
-            <div class="right">
-                <div class="pain-points">
-                    <h2>Development</h3>
-                        <ul>
-                            <li>Implement correct structure & semantics</li>
-                            <li>Use native HTML elements</li>
-                            <li>Understand ARIA</li>
-                            <li>Do unit testing</li>
-                        </ul>
+            <div class="page17-right">
+                <div class="page17-pain-points">
+                    <h2>Development</h2>
+                    <ul>
+                        <li>Implement correct structure &amp; semantics</li>
+                        <li>Use native HTML elements</li>
+                        <li>Understand ARIA</li>
+                        <li>Do unit testing</li>
+                    </ul>
                 </div>
-                <div class="relief-points">
-                    <h2>test</h3>
-                        <ul>
-                            <li>Building specialisation and qualification in the team for A11Y testing</li>
-                            <li>Do automatic and manual testing</li>
-                        </ul>
+                <div class="page17-relief-points">
+                    <h2>test</h2>
+                    <ul>
+                        <li>Building specialisation and qualification in the team for A11Y testing</li>
+                        <li>Do automatic and manual testing</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="grid qr-code">
-        <div class="left">
+    <div class="page17-grid page17-qr-code">
+        <div class="page17-left">
         </div>
-        <div class="grid">
+        <div class="page17-grid">
             <div class="smallcapital unknown fat">
                 <p>LEARN MORE</p>
             </div>
             <div>
-                <img src="./images/qr-codes/w3g.planning.svg" alt="QR code leading to more information" aria-label="QR code" class="qr">
+                <img src="./images/qr-codes/w3g.planning.svg" alt="QR code leading to more information" aria-label="QR code" class="page17-qr">
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(17)
+</script>

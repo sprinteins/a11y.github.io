@@ -8,28 +8,28 @@
     <link rel="stylesheet" href="font-faces.css">
     <link rel="stylesheet" href="./colors/index.css">
     <style>
-        .icons {
+        .page1-icons {
             display: flex;
             justify-content: space-between;
             margin: 20px 0;
         }
 
-        .icons div {
+        .page1-icons div {
             text-align: center;
             flex: 1;
         }
 
-        .icons div img {
+        .page1-icons div img {
             max-width: 50px;
             margin-bottom: 10px;
         }
 
-        .photo {
+        .page1-photo {
             text-align: center;
             margin-top: 30px;
         }
 
-        .photo img {
+        .page1-photo img {
             max-width: 100%;
             position: absolute;
             left: 0;
@@ -41,7 +41,7 @@
             font-weight: 700;
         }
 
-        .letter-spacing {
+        .page1-letter-spacing {
             letter-spacing: 2px;
         }
     </style>
@@ -49,33 +49,40 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="header">What is digital accessibility or A11Y?</h1>
+    <div class="page1-container">
+        <h1 class="page1-header">What is digital accessibility or A11Y?</h1>
         <h2 class="unknown">Digital accessibility or A11Y ensures that <span class="fat">every person</span>
             has the same experience and can use
             digital products – regardless of the digital format.</h2>
-        <section class="icons">
+        <section class="page1-icons">
             <div>
                 <img src="./icons/icon_computer.svg" alt="Mobile Apps Icon">
-                <p class="fat letter-spacing">MOBILE APPS</p>
+                <p class="fat page1-letter-spacing">MOBILE APPS</p>
             </div>
             <div>
                 <img src="./icons/icon_digital_document.svg" alt="Digital Documents Icon">
-                <p class="fat letter-spacing">DIGITAL DOCUMENTS</p>
+                <p class="fat page1-letter-spacing">DIGITAL DOCUMENTS</p>
             </div>
             <div>
                 <img src="./icons/icon_website_pages.svg" alt="Website Pages Icon">
-                <p class="fat letter-spacing">WEBSITE PAGES</p>
+                <p class="fat page1-letter-spacing">WEBSITE PAGES</p>
             </div>
         </section>
-        <figure class="photo">
-            <div class="image-container">
-                <div class="overlay"></div>
+        <figure class="page1-photo">
+            <div class="page1-image-container">
+                <div class="page1-overlay"></div>
 
                 <img src="./images/group.png" alt="A diverse group of people including a person in a wheelchair, smiling at the camera">
             </div>
         </figure>
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(1)
+</script>

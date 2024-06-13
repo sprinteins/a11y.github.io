@@ -23,37 +23,37 @@
             margin: 0;
         }
 
-        .intro {
+        .page19-intro {
             text-align: left;
             margin-bottom: 30px;
         }
 
-        .intro p {
+        .page19-intro p {
             margin: 10px 0;
         }
 
-        .section {
+        .page19-section {
             margin-bottom: 30px;
             margin-top: 3rem;
         }
 
-        .section h2 {
+        .page19-section h2 {
             font-size: 1.5rem;
             /* Adjust size as needed */
             margin-bottom: 5px;
             margin-top: 0;
         }
 
-        .section p {
+        .page19-section p {
             margin: 5px 0;
         }
 
-        .arrow-wrapper {
+        .page19-arrow-wrapper {
             margin: 50px 0;
             position: relative;
         }
 
-        .vLine {
+        .page19-vLine {
             border-left: 1.25px solid black;
             height: 75px;
             position: absolute;
@@ -61,7 +61,7 @@
             top: -95%;
         }
 
-        .triangle {
+        .page19-triangle {
             color: white;
             display: flex;
             justify-content: center;
@@ -78,24 +78,24 @@
             clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
         }
 
-        .flag {
+        .page19-flag {
             width: 50px;
             /* Adjust size as needed */
             height: auto;
             margin-top: 20px;
         }
 
-        .flow {
+        .page19-flow {
             text-align: center;
         }
 
-        .underlay {
+        .page19-underlay {
             background: white;
             position: relative;
             z-index: 9999;
         }
 
-        .arrow {
+        .page19-arrow {
             position: absolute;
             left: 50%;
             top: -75%;
@@ -107,41 +107,48 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page19-container">
         <h1>What is the EAA?</h1>
-        <div class="intro">
+        <div class="page19-intro">
             <p>The <strong>European Accessibility Act</strong> is intended to ensure that everyday digital services are accessible without any constraints throughout Europe. For the requirements the EAA refers to the EU Norm, which is largely based on the international standard WCAG.</p>
         </div>
-        <div class="flow">
-            <div class="section">
+        <div class="page19-flow">
+            <div class="page19-section">
                 <h2>EAA</h2>
                 <p><strong>E</strong>uropean <strong>A</strong>ccessibility <strong>A</strong>ct</p>
             </div>
-            <div class="arrow-wrapper">
-                <p class="underlay subline fat smallcapital">Refers to</p>
-                <div class="arrow">
-                    <div class="vLine"></div>
-                    <div class="triangle"></div>
+            <div class="page19-arrow-wrapper">
+                <p class="page19-underlay subline fat smallcapital">Refers to</p>
+                <div class="page19-arrow">
+                    <div class="page19-vLine"></div>
+                    <div class="page19-triangle"></div>
                 </div>
             </div>
-            <div class="section">
-                <img src="./image/eu_flag.png" alt="EU Flag" class="flag">
+            <div class="page19-section">
+                <img src="./image/eu_flag.png" alt="EU Flag" class="page19-flag">
                 <h2>EN 301 549</h2>
                 <p><strong>E</strong>uropean <strong>N</strong>orm for Digital Accessibility</p>
             </div>
-            <div class="arrow-wrapper">
-                <p class="underlay subline fat smallcapital">Refers to</p>
-                <div class="arrow">
-                    <div class="vLine"></div>
-                    <div class="triangle"></div>
+            <div class="page19-arrow-wrapper">
+                <p class="page19-underlay subline fat smallcapital">Refers to</p>
+                <div class="page19-arrow">
+                    <div class="page19-vLine"></div>
+                    <div class="page19-triangle"></div>
                 </div>
             </div>
-            <div class="section">
+            <div class="page19-section">
                 <h2>WCAG 2.1</h2>
                 <p><strong>W</strong>eb <strong>C</strong>ontent <strong>A</strong>ccessibility <strong>G</strong>uidelines</p>
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(19)
+</script>

@@ -12,11 +12,11 @@
         /*
         */
 
-        .container {
+        .page15-container {
             margin: 0 auto;
         }
 
-        ol {
+        .page15-container ol {
             list-style: none;
             counter-reset: item;
             padding: 0;
@@ -24,7 +24,7 @@
             list-style-position: inside;
         }
 
-        li {
+        .page15-container li {
             counter-increment: item;
             margin-bottom: 10px;
             padding-left: 1.5rem;
@@ -33,7 +33,7 @@
             /* Moves first line back to align with numbers */
         }
 
-        li:before {
+        .page15-container li:before {
             content: counter(item);
             width: 1.2em;
             padding-right: 1rem;
@@ -42,24 +42,24 @@
             font-family: "SoinSansPro-Bold";
         }
 
-        .gains {
+        .page15-gains {
             all: unset;
         }
 
-        .gains:before {
+        .page15-gains:before {
             all: unset;
         }
 
-        .gains h2 {
+        .page15-gains h2 {
             padding-left: 1.5rem;
         }
 
-        .photo {
+        .page15-photo {
             text-align: center;
             margin-top: 30px;
         }
 
-        .photo img {
+        .page15-photo img {
             max-width: 100%;
             position: absolute;
             left: 0;
@@ -76,20 +76,27 @@
  -->
 
 <body>
-    <div class="container">
+    <div class="page15-container">
         <h1>Where to start?</h1>
         <ol>
 
         </ol>
-        <figure class="photo">
-            <div class="image-container">
-                <div class="overlay"></div>
+        <figure class="page15-photo">
+            <div class="page15-image-container">
+                <div class="page15-overlay"></div>
 
 
             </div>
         </figure>
     </div>
 
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(15)
+</script>

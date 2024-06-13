@@ -9,22 +9,22 @@
     <link rel="stylesheet" href="font-faces.css">
     <link rel="stylesheet" href="./style.css">
     <style>
-        h3 {
+        .page11-container h3 {
             padding: 0;
             margin: 0;
         }
 
-        p {
+        .page11-container p {
             all: unset;
         }
 
-        .grid {
+        .page11-grid {
             display: grid;
             grid-template-columns: 50% 50%;
             align-items: end;
         }
 
-        ol {
+        .page11-container ol {
             list-style: none;
             counter-reset: item;
             padding: 0;
@@ -33,14 +33,14 @@
             margin-top: 2rem;
         }
 
-        .tech-item {
+        .page11-tech-item {
             display: grid;
             grid-template-columns: 20% 80%;
             column-gap: 1rem;
             margin-bottom: 1.5rem;
         }
 
-        .tech-item img {
+        .page11-tech-item img {
             max-width: 100%;
         }
     </style>
@@ -49,7 +49,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page11-container">
         <h1>How can <span class="fat">adaptive strategies</span> help?</h1>
         <h2 class="unknown">
             Adaptive strategies can help coping
@@ -57,43 +57,50 @@
         </h2>
         <ol>
             <li>
-                <div class="tech-item">
+                <div class="page11-tech-item">
                     <img src="./icons/icon_4_magnyfing_glass.svg" alt="Text Zoom Icon">
                     <div>
-                        <h3 class="item-text">Text Zoom</h3>
+                        <h3 class="page11-item-text">Text Zoom</h3>
                         <p>Makes text easier to read and increases understanding.</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="tech-item">
+                <div class="page11-tech-item">
                     <img src="./icons/icon_3_play_comment.svg" alt="Captions Icon">
                     <div>
-                        <h3 class="item-text">Captions</h3>
+                        <h3 class="page11-item-text">Captions</h3>
                         <p>Displays speech and auditory information of a video.</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="tech-item">
+                <div class="page11-tech-item">
                     <img src="./icons/icon_2_black_white.svg" alt="High Contrast Mode Icon">
                     <div>
-                        <h3 class="item-text">High Contrast Mode</h3>
+                        <h3 class="page11-item-text">High Contrast Mode</h3>
                         <p>Helps people to better distinguish content.</p>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="tech-item">
+                <div class="page11-tech-item">
                     <img src="./icons/icon_1_settings.svg" alt="Personal Configurations Icon">
                     <div>
-                        <h3 class="item-text">Personal Configurations</h3>
+                        <h3 class="page11-item-text">Personal Configurations</h3>
                         <p>Helps people to fit the interaction to their needs.</p>
                     </div>
                 </div>
             </li>
         </ol>
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(11)
+</script>

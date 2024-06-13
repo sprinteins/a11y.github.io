@@ -12,11 +12,11 @@
         /*
         */
 
-        .container {
+        .page13-container {
             margin: 0 auto;
         }
 
-        ol {
+        .page13-container ol {
             list-style: none;
             counter-reset: item;
             padding: 0;
@@ -24,7 +24,7 @@
             list-style-position: inside;
         }
 
-        li {
+        .page13-container li {
             counter-increment: item;
             margin-bottom: 10px;
             padding-left: 1.5rem;
@@ -33,7 +33,7 @@
             /* Moves first line back to align with numbers */
         }
 
-        li:before {
+        .page13-container li:before {
             content: counter(item);
             width: 1.2em;
             padding-right: 1rem;
@@ -42,24 +42,24 @@
             font-family: "SoinSansPro-Bold";
         }
 
-        .gains {
+        .page13-gains {
             all: unset;
         }
 
-        .gains:before {
+        .page13-gains:before {
             all: unset;
         }
 
-        .gains h2 {
+        .page13-gains h2 {
             padding-left: 1.5rem;
         }
 
-        .photo {
+        .page13-photo {
             text-align: center;
             margin-top: 30px;
         }
 
-        .photo img {
+        .page13-photo img {
             max-width: 100%;
             position: absolute;
             left: 0;
@@ -71,7 +71,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page13-container">
         <h1>How to get started?</h1>
         <ol>
             <li class="copy">Raise awareness with stakeholders</li>
@@ -82,15 +82,22 @@
             <li class="copy">Report content, that has known barriers</li>
             <li class="copy">Make a plan for long term management of A11Y</li>
         </ol>
-        <figure class="photo">
-            <div class="image-container">
-                <div class="overlay"></div>
+        <figure class="page13-photo">
+            <div class="page13-image-container">
+                <div class="page13-overlay"></div>
 
                 <img src="./image/sprinteinsmarketing_Picture_of_a_checklist_and_hands_which_are__7cc1c29d-fcf0-4688-b0b0-2c742aa4ab5b.png" alt="A diverse group of people including a person in a wheelchair, smiling at the camera">
             </div>
         </figure>
     </div>
 
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(13)
+</script>

@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="font-faces.css">
     <link rel="stylesheet" href="./colors/index.css">
     <link rel="stylesheet" href="./style.css">
+
     <style>
-        .container {
+        .page0-container {
             all: unset;
             background-color: white;
         }
 
-        body {
+        .page0-body {
             background-color: white;
             margin: 0
         }
 
-        .left-letter {
+        .page0-left-letter {
             text-align: left;
         }
 
-        .right-letter {
+        .page0-right-letter {
             text-align: right;
         }
 
-        .big-letter {
+        .page0-big-letter {
             font-size: 75vw;
             padding: 0;
             margin: 0;
@@ -39,7 +40,7 @@
             z-index: 1;
         }
 
-        .triangle {
+        .page0-triangle {
             color: white;
             width: 20rem;
             height: 23rem;
@@ -47,7 +48,7 @@
             font-size: 2rem;
         }
 
-        .tri-1 {
+        .page0-tri-1 {
             position: absolute;
             top: -11.75rem;
             right: -3rem;
@@ -56,7 +57,7 @@
             clip-path: polygon(0 0, 0 100%, 100% 50%);
         }
 
-        .tri-2 {
+        .page0-tri-2 {
             position: absolute;
             top: -11.75rem;
             right: 0;
@@ -65,19 +66,19 @@
             clip-path: polygon(100% 0, 100% 100%, 0 50%);
         }
 
-        .rect-1 {
+        .page0-rect-1 {
             align-self: self-end;
             left: 4rem;
             top: -3.5rem !important;
         }
 
-        .rect-2 {
+        .page0-rect-2 {
             align-self: self-start;
             right: 4rem;
             top: -5.5rem !important;
         }
 
-        .rectangle {
+        .page0-rectangle {
             color: white;
             width: 100vw;
             height: 8rem;
@@ -87,7 +88,7 @@
             position: absolute;
         }
 
-        .letters {
+        .page0-letters {
             z-index: 2;
             position: absolute;
             width: 100%;
@@ -97,7 +98,7 @@
             flex-direction: column;
         }
 
-        .graphs {
+        .page0-graphs {
             z-index: 1;
             position: absolute;
             width: 100%;
@@ -107,25 +108,25 @@
             flex-direction: column;
         }
 
-        .right {
+        .page0-right {
             grid-area: right;
             display: flex;
             flex-direction: column;
             padding: 1rem;
         }
 
-        .right p {
+        .page0-right p {
             align-self: flex-end;
             text-align: left;
             width: 60%;
         }
 
-        .left {
+        .page0-left {
             width: 100%;
             grid-area: left;
         }
 
-        .grid {
+        .page0-grid {
             position: relative;
             display: grid;
             z-index: 3;
@@ -139,7 +140,7 @@
             text-align: left;
         }
 
-        .row {
+        .page0-row {
             display: flex;
             position: relative;
             flex-direction: column;
@@ -148,12 +149,12 @@
 
 </head>
 
-<body>
-    <div class="container">
-        <div class="grid">
-            <div class="left">
+<body class="page0-body">
+    <div class="page0-container">
+        <div class="page0-grid">
+            <div class="page0-left">
             </div>
-            <div class="right">
+            <div class="page0-right">
                 <h1>
                     Digital accessibility
                 </h1>
@@ -162,26 +163,38 @@
                 </p>
             </div>
         </div>
-        <div class="letters">
-            <div class="row">
-                <span class="big-letter left-letter">A</span>
-                <div class="triangle tri-1"></div>
+        <div class="page0-letters">
+            <div class="page0-row">
+                <span class="page0-big-letter page0-left-letter">A</span>
+                <div class="page0-triangle page0-tri-1"></div>
             </div>
-            <div class="row">
-                <span class="big-letter right-letter">1</span>
-                <div class="rectangle rect-1"></div>
+            <div class="page0-row">
+                <span class="page0-big-letter page0-right-letter">1</span>
+                <div class="page0-rectangle page0-rect-1"></div>
             </div>
-            <div class="row">
-                <span class="big-letter left-letter">1</span>
-                <div class="rectangle rect-2"></div>
+            <div class="page0-row">
+                <span class="page0-big-letter page0-left-letter">1</span>
+                <div class="page0-rectangle page0-rect-2"></div>
             </div>
-            <div class="row">
-                <span class="big-letter right-letter">Y</span>
-                <div class="triangle tri-2"></div>
+            <div class="page0-row">
+                <span class="page0-big-letter page0-right-letter">Y</span>
+                <div class="page0-triangle page0-tri-2"></div>
             </div>
 
         </div>
     </div>
+
+
 </body>
 
 </html>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(0)
+</script>
+
+<script src="./script.js"></script>
+<script>
+    renderNavigationButton(0)
+</script>

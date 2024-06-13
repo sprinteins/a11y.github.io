@@ -26,6 +26,27 @@ function renderIFrames(amount) {
 	}
 }
 
+function renderNavigationButton(current) {
+	const backNumber = Math.max(0, current - 1);
+	const forwardNumber = Math.min(21, current + 1);
+	const body = document.getElementsByTagName("body")[0];
+	const back = document.createElement("a");
+	back.innerText = "back";
+	back.setAttribute("href", `./page${backNumber}.html`);
+	back.classList.add("navigation-btn");
+	const forward = document.createElement("a");
+	forward.innerText = "forward";
+	forward.setAttribute("href", `./page${forwardNumber}.html`);
+	back.classList.add("navigation-btn");
+
+	const wrapper = document.createElement("div");
+	wrapper.classList.add("navigation-wrapper");
+
+	wrapper.appendChild(back);
+	wrapper.appendChild(forward);
+	body.appendChild(wrapper);
+}
+
 function onLoad() {
 	this.style.height = this.contentWindow.document.body.scrollHeight + "px";
 }

@@ -32,7 +32,7 @@ nicht kleiner als 14
 
 # Styleguide
 
-## Formatierungen anhandvom Flyer
+## Formatierungen an hand vom Flyer
 
 H1
 Helvetica Neue LT Pro 
@@ -65,10 +65,21 @@ Light
 
 # Navigation
 
+## Möglichkeiten
+
 - back/forward
+  - Am einfachsten da man die bisherige Struktur beibehalten kann und classnames nicht im Nachhinein prefixen muss
 - alles auf einer Seite
   - iframes untereinander?
     - kompliziert wegen der höhe der iframes
   - alles htmls zu einem html machen
     - kompliziert die alle zusammenzufassen da css klassen namen sich wiederholen
+    - Das ist gescheitert an den Aufwänden die css classnames so zu prefixen das alles passt
+      - Diverse stylings sind nicht darauf ausgelegt dass sie in einer großen Page angezeigt werden
   -
+
+## Wahl
+
+- back/forward buttons
+
+Das hier wird die gewählte Lösung sein da es die bisherige Struktur beibehält und einfacher zu lösen ist

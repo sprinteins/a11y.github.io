@@ -57,21 +57,33 @@ function getFileName(number) {
 }
 
 function backButton(navigateToFile) {
-	const back = document.createElement("a");
-	back.innerText = "back";
-	back.setAttribute("href", navigateToFile);
-	back.classList.add("navigation-btn");
+	const el = document.createElement("a");
+	// el.innerText = "back";
+	el.setAttribute("href", navigateToFile);
+	el.classList.add("navigation-btn");
+	el.appendChild(icon("left"));
 
-	return back;
+	return el;
 }
 
 function forwardButton(navigateToFile) {
-	const forward = document.createElement("a");
-	forward.innerText = "forward";
-	forward.setAttribute("href", navigateToFile);
-	forward.classList.add("navigation-btn");
+	const el = document.createElement("a");
+	// el.innerText = "forward";
+	el.setAttribute("href", navigateToFile);
+	el.classList.add("navigation-btn");
 
-	return forward;
+	el.appendChild(icon("right"));
+
+	return el;
+}
+
+function icon(direction) {
+	const el = document.createElement("img");
+	el.innerText = "el";
+	el.setAttribute("src", `./icons/icon_10_${direction}_carrat.svg`);
+	el.classList.add(direction);
+
+	return el;
 }
 
 function onLoad() {

@@ -125,10 +125,18 @@ h3 {
 }
 
 .navigation-wrapper {
-	top: 0;
-	position: absolute;
+	width: 100%;
+	position: sticky;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	padding: 2rem 0;
+}
+
+.left,
+.right {
+	width: 3rem;
+	user-select: none;
 }
 
 .navigation-wrapper a {

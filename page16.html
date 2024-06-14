@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4 Reasons to Act Now!</title>
     <link rel="stylesheet" href="./colors/index.css">
-    <link rel="stylesheet" href="font-faces.css">
+    <link rel="stylesheet" href="./fonts/font-faces.css">
     <link rel="stylesheet" href="./style.css">
     <style>
         .page16-container h1 span {
@@ -48,9 +48,15 @@
 
         .page16-grid {
             display: grid;
-            grid-template-columns: 30% 70%;
             align-items: end;
             grid-gap: 1rem;
+            grid-template-columns: 2px 1fr 2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "vline n1 n2"
+                "vline n3 n4"
+                "vline n5 n6"
+                "vline n7 n8";
         }
 
         .page16-vLine {
@@ -58,6 +64,7 @@
             height: 100vh;
             position: absolute;
             left: 3rem;
+            grid-area: vline;
         }
 
         .page16-left {
@@ -66,38 +73,98 @@
             position: relative;
         }
 
-        .page16-triangle {
+        .objects {
             color: white;
             display: flex;
+            margin-top: 2rem;
+            align-self: flex-start;
+            justify-content: center;
+            align-items: center;
             justify-content: center;
             flex-wrap: wrap;
-            align-content: center;
+        }
+
+        .page16-triangle {
             width: 4rem;
             height: 4rem;
-            align-self: center;
             background: black;
-            position: absolute;
             font-size: 2rem;
-            left: 17px;
-            top: 2rem;
             clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
         }
 
         .page16-circle {
-            color: white;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-content: center;
             width: 4rem;
             height: 4rem;
-            align-self: center;
             background: black;
-            position: absolute;
             font-size: 2rem;
-            left: 17px;
-            top: 17rem;
             clip-path: circle(50%);
+        }
+
+        .page17-triangle {
+            width: 4.5rem;
+            height: 4rem;
+            background: black;
+            font-size: 2rem;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            rotate: 90deg
+        }
+
+        .page17-circle {
+            width: 4rem;
+            height: 4rem;
+            background: black;
+            font-size: 2rem;
+            clip-path: inset(0% 0% 0% 0%);
+            rotate: 45deg
+        }
+
+        .page17-circle span {
+            rotate: -45deg
+        }
+
+        .page17-triangle span {
+            rotate: -90deg
+        }
+
+        .n1 {
+            grid-area: n1;
+        }
+
+        .n2 {
+            grid-area: n2;
+        }
+
+        .n3 {
+            grid-area: n3;
+        }
+
+        .n4 {
+            grid-area: n4;
+        }
+
+        .n5 {
+            grid-area: n5;
+        }
+
+        .n6 {
+            grid-area: n6;
+        }
+
+        .n7 {
+            grid-area: n7;
+        }
+
+        .n8 {
+            grid-area: n8;
+        }
+
+
+        .page17-qr-code {
+            margin-top: 5rem;
+        }
+
+        .page17-qr {
+            width: 4rem;
         }
     </style>
 
@@ -108,32 +175,57 @@
     <div class="page16-container">
         <h1>Why is A11Y a team effort?<span>Part 1</span></h1>
         <div class="page16-grid">
-            <div class="page16- page16-left">
-                <div class="page16-vLine"></div>
-                <div class="page16-triangle">1</div>
-                <div class="page16-circle">2</div>
+            <div class="page16-vLine"></div>
+            <div class="page16-triangle n1 objects">1</div>
+            <div class="page16-pain-points n2">
+                <h2>Management &amp; Product</h2>
+                <ul>
+                    <li>Build awareness and knowledge about A11Y in the team</li>
+                    <li>Set A11Y goals</li>
+                    <li>Define clear A11Y requirements</li>
+                </ul>
             </div>
-            <div class="page16-right">
-                <div class="page16-pain-points">
-                    <h2>Management &amp; Product</h2>
-                    <ul>
-                        <li>Build awareness and knowledge about A11Y in the team</li>
-                        <li>Set A11Y goals</li>
-                        <li>Define clear A11Y requirements</li>
-                    </ul>
-                </div>
-                <div class="page16-relief-points">
-                    <h2>Design</h2>
-                    <ul>
-                        <li>Create accessible text and multimedia content</li>
-                        <li>Consider all different types of user interaction, e.g. like keyboard users</li>
-                        <li>Design easy visual layouts and choose clear colors</li>
-                    </ul>
-                </div>
+            <div class="page16-circle n3 objects">2</div>
+            <div class="page16-relief-points n4">
+                <h2>Design</h2>
+                <ul>
+                    <li>Create accessible text and multimedia content</li>
+                    <li>Consider all different types of user interaction, e.g. like keyboard users</li>
+                    <li>Design easy visual layouts and choose clear colors</li>
+                </ul>
+            </div>
+            <div class="page17-triangle n5 objects"><span>3</span></div>
+            <div class="page17-pain-points n6">
+                <h2>Development</h2>
+                <ul>
+                    <li>Implement correct structure &amp; semantics</li>
+                    <li>Use native HTML elements</li>
+                    <li>Understand ARIA</li>
+                    <li>Do unit testing</li>
+                </ul>
+            </div>
+            <div class="page17-circle n7 objects"><span>4</span></div>
+            <div class="page17-relief-points n8">
+                <h2>test</h2>
+                <ul>
+                    <li>Building specialisation and qualification in the team for A11Y testing</li>
+                    <li>Do automatic and manual testing</li>
+                </ul>
             </div>
         </div>
     </div>
-
+    <div class="page17-grid page17-qr-code">
+        <div class="page17-left">
+        </div>
+        <div class="page17-grid">
+            <div class="smallcapital unknown fat">
+                <p>LEARN MORE</p>
+            </div>
+            <div>
+                <img src="./images/qr-codes/w3g.planning.svg" alt="QR code leading to more information" aria-label="QR code" class="page17-qr">
+            </div>
+        </div>
+    </div>
 
 </body>
 

@@ -83,3 +83,14 @@ Light
 - back/forward buttons
 
 Das hier wird die gewählte Lösung sein da es die bisherige Struktur beibehält und einfacher zu lösen ist
+
+## Project Structure
+
+TODO:
+category/
+├── meta.json
+├── section/
+│ ├── meta.json
+│ ├── article/
+│ │ ├── content.md
+│ │ ├── meta.jso

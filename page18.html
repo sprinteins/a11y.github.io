@@ -6,79 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4 Reasons to Act Now!</title>
     <link rel="stylesheet" href="./colors/index.css">
-    <link rel="stylesheet" href="font-faces.css">
+    <link rel="stylesheet" href="./fonts/font-faces.css">
     <link rel="stylesheet" href="./style.css">
     <style>
-        .page18-container h1 span {
+        h1 span {
             font-size: 2rem;
         }
 
-        .page18-container h3 {
+        h3 {
             padding: 0;
             margin: 0;
         }
 
-        .page18-container p {
+        p {
             padding: 0;
             margin: 0;
         }
 
-
-        .page18-container ul {
-            list-style-type: none;
-            padding: 0;
-            margin-top: 0.3rem;
+        .page19-intro {
+            text-align: left;
+            margin-bottom: 30px;
         }
 
-        .page18-container ul li {
+        .page19-intro p {
+            margin: 10px 0;
+        }
+
+        .page19-section {
+            margin-bottom: 30px;
+            margin-top: 3rem;
+        }
+
+        .page19-section h2 {
+            font-size: 1.5rem;
+            /* Adjust size as needed */
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+
+        .page19-section p {
+            margin: 5px 0;
+        }
+
+        .page19-arrow-wrapper {
+            margin: 50px 0;
             position: relative;
         }
 
-        .page18-container ul li::before {
-            content: "_";
+        .page19-vLine {
+            border-left: 1.25px solid black;
+            height: 75px;
             position: absolute;
-            left: -0.75rem;
-            top: 0;
-            color: #333;
+            left: 50.9%;
+            top: -95%;
         }
 
-        .page18-image-container {
-            margin-top: 2rem;
-            width: 100vw;
-            margin-left: -20px;
+        .page19-triangle {
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 0.75rem;
+            height: 1.25rem;
+            align-self: center;
+            background: black;
+            position: absolute;
+            font-size: 2rem;
+            left: -0.35rem;
+            top: 4rem;
+            clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
         }
 
-        .page18-image-container img {
-            width: 100%;
+        .page19-flag {
+            width: 50px;
+            /* Adjust size as needed */
             height: auto;
+            margin-top: 20px;
         }
 
-        .page18-grid {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            align-items: end;
+        .page19-flow {
+            text-align: center;
         }
 
-        .page18-left {
-            width: 100%;
-            height: 100%;
+        .page19-underlay {
+            background: white;
             position: relative;
+            z-index: 9999;
         }
 
-        .page18-qr-code {
-            margin-top: 1rem;
-        }
-
-        .page18-qr {
-            width: 4rem;
-        }
-
-        .page18-note {
-            margin-top: 6rem;
-        }
-
-        .page18-learn {
-            font-size: 0.75rem;
+        .page19-arrow {
+            position: absolute;
+            left: 50%;
+            top: -75%;
+            z-index: 1;
         }
     </style>
 
@@ -86,32 +107,38 @@
 </head>
 
 <body>
-    <div class="page18-container">
-        <h1>How can web technologies support A11Y?</h1>
-        <div class="page18-main-content">
-            <h2 class="copy">HTML, CSS and JavaScript are already a good foundation for A11Y, if used correctly.</h2>
-            <h3 class="smallcapital">Questions? Talk to our development-team.</h3>
+    <div class="page19-container">
+        <h1>What is the EAA?</h1>
+        <div class="page19-intro">
+            <p>The <strong>European Accessibility Act</strong> is intended to ensure that everyday digital services are accessible without any constraints throughout Europe. For the requirements the EAA refers to the EU Norm, which is largely based on the international standard WCAG.</p>
         </div>
-        <div class="page18-note">
-            <h3 class="smallcapital">Please Note:</h3>
-            <p>Always try to sustain digital accessibility through considerations such as</p>
-            <ul>
-                <li>align semantic &amp; visual meaning</li>
-                <li>unobtrusive use</li>
-                <li>keep keyboard interaction in mind</li>
-                <li>and more!</li>
-            </ul>
-        </div>
-    </div>
-    <div class="page18-grid page18-qr-code">
-        <div class="page18-left">
-        </div>
-        <div class="page18-grid">
-            <div class="smallcapital unknown fat page18-learn">
-                <p>Learn More:</p>
+        <div class="page19-flow">
+            <div class="page19-section">
+                <h2>EAA</h2>
+                <p><strong>E</strong>uropean <strong>A</strong>ccessibility <strong>A</strong>ct</p>
             </div>
-            <div>
-                <img src="./images/qr-codes/w3g.aria.svg" alt="QR code leading to more information" aria-label="QR code" class="page18-qr">
+            <div class="page19-arrow-wrapper">
+                <p class="page19-underlay subline fat smallcapital">Refers to</p>
+                <div class="page19-arrow">
+                    <div class="page19-vLine"></div>
+                    <div class="page19-triangle"></div>
+                </div>
+            </div>
+            <div class="page19-section">
+                <img src="./images/eu_flag.png" alt="EU Flag" class="page19-flag">
+                <h2>EN 301 549</h2>
+                <p><strong>E</strong>uropean <strong>N</strong>orm for Digital Accessibility</p>
+            </div>
+            <div class="page19-arrow-wrapper">
+                <p class="page19-underlay subline fat smallcapital">Refers to</p>
+                <div class="page19-arrow">
+                    <div class="page19-vLine"></div>
+                    <div class="page19-triangle"></div>
+                </div>
+            </div>
+            <div class="page19-section">
+                <h2>WCAG 2.1</h2>
+                <p><strong>W</strong>eb <strong>C</strong>ontent <strong>A</strong>ccessibility <strong>G</strong>uidelines</p>
             </div>
         </div>
     </div>

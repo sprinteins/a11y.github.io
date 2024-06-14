@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Accessibility</title>
-    <link rel="stylesheet" href="font-faces.css">
+    <link rel="stylesheet" href="./fonts/font-faces.css">
     <link rel="stylesheet" href="./colors/index.css">
     <link rel="stylesheet" href="./style.css">
 
@@ -130,7 +130,6 @@
             position: relative;
             display: grid;
             z-index: 3;
-            top: 9rem;
             grid-template-areas: "left right";
             grid-template-columns: 40% 60%;
         }
@@ -145,12 +144,20 @@
             position: relative;
             flex-direction: column;
         }
+
+        .page0-logo-wrapper {
+            width: 2rem;
+            margin: 2rem;
+        }
     </style>
 
 </head>
 
 <body class="page0-body">
     <div class="page0-container">
+        <div class="page0-logo-wrapper">
+            <img src="./images/logos/SprintEins_Signet_RGB-p.svg" alt="SprintEins Logo">
+        </div>
         <div class="page0-grid">
             <div class="page0-left">
             </div>

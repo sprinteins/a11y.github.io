@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="./fonts/font-faces.css">
     <link rel="stylesheet" href="./style.css">
     <style>
-        .page16-container h1 span {
-            font-size: 2rem;
-        }
-
         .page16-container h2 {
             margin-bottom: 1rem;
         }
@@ -35,36 +31,27 @@
             color: #333;
         }
 
-        .page16-image-container {
-            margin-top: 2rem;
-            width: 100vw;
-            margin-left: -20px;
-        }
-
-        .page16-image-container img {
-            width: 100%;
-            height: auto;
-        }
-
         .page16-grid {
             display: grid;
+            position: relative;
+            height: 100%;
             align-items: end;
             grid-gap: 1rem;
-            grid-template-columns: 2px 1fr 2fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: max-content;
             grid-template-areas:
-                "vline n1 n2"
-                "vline n3 n4"
-                "vline n5 n6"
-                "vline n7 n8";
+                "n1 n2"
+                "n3 n4"
+                "n5 n6"
+                "n7 n8";
         }
 
         .page16-vLine {
             border-left: 1px solid lightgray;
-            height: 100vh;
+            height: calc(100% + 100vh);
+            grid-area: n1;
             position: absolute;
-            left: 3rem;
-            grid-area: vline;
+            justify-self: center;
+            top: 0;
         }
 
         .page16-left {
@@ -76,9 +63,9 @@
         .objects {
             color: white;
             display: flex;
-            margin-top: 2rem;
+            margin-top: 1.25rem;
             align-self: flex-start;
-            justify-content: center;
+            justify-self: center;
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
@@ -166,6 +153,17 @@
         .page17-qr {
             width: 4rem;
         }
+
+
+        .page17-grid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: end;
+        }
+
+        .page17-grid div p {
+            font-size: 0.75rem;
+        }
     </style>
 
 
@@ -173,7 +171,7 @@
 
 <body>
     <div class="page16-container">
-        <h1>Why is A11Y a team effort?<span>Part 1</span></h1>
+        <h1>Why is A11Y a team effort?</h1>
         <div class="page16-grid">
             <div class="page16-vLine"></div>
             <div class="page16-triangle n1 objects">1</div>
@@ -219,7 +217,7 @@
         </div>
         <div class="page17-grid">
             <div class="smallcapital unknown fat">
-                <p>LEARN MORE</p>
+                <p><strong>LEARN MORE:</strong></p>
             </div>
             <div>
                 <img src="./images/qr-codes/w3g.planning.svg" alt="QR code leading to more information" aria-label="QR code" class="page17-qr">

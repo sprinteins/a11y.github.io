@@ -139,3 +139,8 @@ h3 {
 	margin-top: 2rem;
 	margin-left: -20px;
 }
+
+.bottom-link {
+	justify-self: center;
+	align-self: flex-start;
+}

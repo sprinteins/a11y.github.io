@@ -13,6 +13,10 @@
 	height: 100%;
 }
 
+strong {
+	font-family: HelveticaLTStd-Bold, "Helvetica Neue LT Pro", sans-serif;
+}
+
 body {
 	font-family: Arial, sans-serif;
 	line-height: 1.6;

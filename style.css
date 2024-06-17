@@ -156,3 +156,12 @@ h3 {
 	justify-self: center;
 	align-self: flex-start;
 }
+
+.textlink {
+	font-family: SoinSansPro-Headline;
+	text-transform: uppercase;
+}
+
+.textlink:hover {
+	color: #1C966C;
+}

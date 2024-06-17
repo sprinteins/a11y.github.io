@@ -151,7 +151,17 @@ h3 {
 
 .navigation-wrapper a {
 	margin: 0 0.5rem;
-	line-height: 0;
+	padding: 0 2rem;
+	font-family: SoinSansPro-Headline;
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 0.14em;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+.navigation-btn:hover {
+	text-decoration: underline;
 }
 
 .bottom-image-container {

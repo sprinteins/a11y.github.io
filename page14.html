@@ -65,6 +65,46 @@
             left: 0;
             height: auto;
         }
+
+        .opening-question {
+            background-color: rgb(248 247 246);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ending-statement {
+            background-color: rgb(248 247 246);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .hidden-explanation {
+            display: none;
+        }
+
+        .flowchart {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .flowchart li {
+            margin-bottom: 10px;
+        }
+
+        .flowchart ul {
+            padding-left: 20px;
+            border-left: 2px solid #ccc;
+            margin-left: 10px;
+        }
+
+        .decision {
+            font-weight: bold;
+        }
     </style>
 
 
@@ -78,16 +118,99 @@
 <body>
     <div class="page14-container">
         <h1>Where to start?</h1>
-        <ol>
-
-        </ol>
-        <figure class="page14-photo">
-            <div class="page14-image-container">
-                <div class="page14-overlay"></div>
-
-
+        <div class="wrapper">
+            <div class="smallcapital opening-question helvetica">
+                <strong>Do you know what your a11y problems are?</strong>
             </div>
-        </figure>
+            <img src="./images/where_to_start.png" alt="A flowchart describing how you can start adding accessibility" />
+            <div class="hidden-explanation">
+                Identify Accessibility Problems:
+
+                "Do you know what your A11Y problems are?"
+                If no, proceed to "Did you evaluate the product?"
+                If yes, move to "Are your findings prioritised?"
+                Product Evaluation:
+
+                "Did you evaluate the product?"
+                If no, proceed to "How many pages do you have?"
+                If yes, return to the main flow asking "Are your findings prioritised?"
+                Page Count:
+
+                "How many pages do you have?"
+                If less than 5, "Test all pages."
+                If more than 5, "Test frequently used key processes."
+                Prioritization of Findings:
+
+                "Are your findings prioritised?"
+                If no, "Start with crucial processes, frequently-used web pages, high impact repairs, etc."
+                If yes, proceed to "Fix them."
+                Fixing Issues:
+
+                After testing or prioritizing, the next step is to "Fix them."
+                Post-Fix Evaluation:
+
+                "Do you still have known issues?"
+                If yes, "Report known barriers."
+                If no, the process ends.
+                Conclusion:
+
+                The flowchart concludes with the statement: "There is no 100% compliance with A11Y guidelines. But always aim as high as possible."
+            </div>
+            <ul class="flowchart hidden-explanation">
+                <li class="decision">Do you know what your A11Y problems are?
+                    <ul>
+                        <li>No
+                            <ul>
+                                <li class="decision">Did you evaluate the product?
+                                    <ul>
+                                        <li>No
+                                            <ul>
+                                                <li class="decision">How many pages do you have?
+                                                    <ul>
+                                                        <li>Less than 5: Test all pages.</li>
+                                                        <li>More than 5: Test frequently used key processes.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Yes
+                                            <ul>
+                                                <li class="decision">Are your findings prioritised?
+                                                    <ul>
+                                                        <li>No: Start with crucial processes, frequently-used web pages, high impact repairs, etc.</li>
+                                                        <li>Yes: Fix them.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Yes
+                            <ul>
+                                <li class="decision">Are your findings prioritised?
+                                    <ul>
+                                        <li>No: Start with crucial processes, frequently-used web pages, high impact repairs, etc.</li>
+                                        <li>Yes: Fix them.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Fix them.</li>
+                <li class="decision">Do you still have known issues?
+                    <ul>
+                        <li>Yes: Report known barriers.</li>
+                        <li>No: There is no 100% compliance with A11Y guidelines. But always aim as high as possible.</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="ending-statement">
+                There is no <strong>100% compliance</strong> with A11Y - guidelines. But always <strong>aim as high as possible</strong>
+            </div>
+        </div>
     </div>
 
 

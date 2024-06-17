@@ -11,13 +11,12 @@
 
     <style>
         .page0-container {
-            all: unset;
             background-color: white;
+            margin: -20px
         }
 
         .page0-body {
             background-color: white;
-            margin: 0
         }
 
         .page0-left-letter {
@@ -90,7 +89,7 @@
 
         .page0-letters {
             z-index: 2;
-            position: absolute;
+            position: relative;
             width: 100%;
             top: 0;
             display: flex;
@@ -127,7 +126,7 @@
         }
 
         .page0-grid {
-            position: relative;
+            position: absolute;
             display: grid;
             z-index: 3;
             grid-template-areas: "left right";

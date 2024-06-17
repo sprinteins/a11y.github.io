@@ -139,6 +139,7 @@ h3 {
 	justify-content: space-between;
 	background-color: #f3f3f3;
 	padding: 2rem 0;
+	z-index: 10;
 }
 
 .left,
@@ -167,5 +168,5 @@ h3 {
 }
 
 .textlink:hover {
-	color: #1C966C;
+	color: #1c966c;
 }

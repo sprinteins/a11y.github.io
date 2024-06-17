@@ -1,4 +1,4 @@
-const pagesAmount = 21;
+const pagesAmount = 20;
 
 function loadPage(page) {
 	document.getElementById("iframe").src = page;

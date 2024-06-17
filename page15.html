@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,88 +9,221 @@
     <link rel="stylesheet" href="./fonts/font-faces.css">
     <link rel="stylesheet" href="./style.css">
     <style>
-        /*
-        */
-
-        .page15-container {
-            margin: 0 auto;
+        .page16-container h2 {
+            margin-bottom: 1rem;
         }
 
-        .page15-container ol {
-            list-style: none;
-            counter-reset: item;
+        .page16-container ul {
+            list-style-type: none;
             padding: 0;
-            padding-left: 0;
-            list-style-position: inside;
         }
 
-        .page15-container li {
-            counter-increment: item;
+        .page16-container ul li {
+            position: relative;
             margin-bottom: 10px;
-            padding-left: 1.5rem;
-            /* Adds padding to keep text aligned */
-            text-indent: -1.5rem;
-            /* Moves first line back to align with numbers */
         }
 
-        .page15-container li:before {
-            content: counter(item);
-            width: 1.2em;
-            padding-right: 1rem;
-            text-align: center;
-            font-size: 1rem;
-            font-family: "SoinSansPro-Bold";
-        }
-
-        .page15-gains {
-            all: unset;
-        }
-
-        .page15-gains:before {
-            all: unset;
-        }
-
-        .page15-gains h2 {
-            padding-left: 1.5rem;
-        }
-
-        .page15-photo {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .page15-photo img {
-            max-width: 100%;
+        .page16-container ul li::before {
+            content: "_";
             position: absolute;
-            left: 0;
-            height: auto;
+            left: -0.75rem;
+            top: 0;
+            color: #333;
+        }
+
+        .page16-grid {
+            display: grid;
+            position: relative;
+            height: 100%;
+            align-items: end;
+            grid-gap: 1rem;
+            grid-template-columns: max-content;
+            grid-template-areas:
+                "n1 n2"
+                "n3 n4"
+                "n5 n6"
+                "n7 n8";
+        }
+
+        .page16-vLine {
+            border-left: 1px solid lightgray;
+            height: calc(100% + 100vh);
+            grid-area: n1;
+            position: absolute;
+            justify-self: center;
+            top: 0;
+        }
+
+        .page16-left {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .objects {
+            color: white;
+            display: flex;
+            margin-top: 2.25rem;
+            align-self: flex-start;
+            justify-self: center;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .page16-triangle {
+            width: 4rem;
+            height: 4rem;
+            background: black;
+            font-size: 2rem;
+            clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+        }
+
+        .page16-circle {
+            width: 4rem;
+            height: 4rem;
+            background: black;
+            font-size: 2rem;
+            clip-path: circle(50%);
+        }
+
+        .page17-triangle {
+            width: 4.5rem;
+            height: 4rem;
+            background: black;
+            font-size: 2rem;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            rotate: 90deg
+        }
+
+        .page17-circle {
+            width: 4rem;
+            height: 4rem;
+            background: black;
+            font-size: 2rem;
+            clip-path: inset(0% 0% 0% 0%);
+            rotate: 45deg
+        }
+
+        .page17-circle span {
+            rotate: -45deg
+        }
+
+        .page17-triangle span {
+            rotate: -90deg
+        }
+
+        .n1 {
+            grid-area: n1;
+        }
+
+        .n2 {
+            grid-area: n2;
+        }
+
+        .n3 {
+            grid-area: n3;
+        }
+
+        .n4 {
+            grid-area: n4;
+        }
+
+        .n5 {
+            grid-area: n5;
+        }
+
+        .n6 {
+            grid-area: n6;
+        }
+
+        .n7 {
+            grid-area: n7;
+        }
+
+        .n8 {
+            grid-area: n8;
+        }
+
+
+        .page17-qr-code {
+            margin-top: 5rem;
+        }
+
+        .page17-qr {
+            width: 4rem;
+        }
+
+
+        .page17-grid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: end;
+        }
+
+        .page17-grid div p {
+            font-size: 0.75rem;
         }
     </style>
 
 
 </head>
-<!-- 
-    workaround idee
-    kästen oben und unten als html mit text
-    den flow chart mit alt text im bild
- -->
 
 <body>
-    <div class="page15-container">
-        <h1>Where to start?</h1>
-        <ol>
-
-        </ol>
-        <figure class="page15-photo">
-            <div class="page15-image-container">
-                <div class="page15-overlay"></div>
-
-
+    <div class="page16-container">
+        <h1>Why is A11Y a team effort?</h1>
+        <div class="page16-grid">
+            <div class="page16-vLine"></div>
+            <div class="page16-triangle n1 objects">1</div>
+            <div class="page16-pain-points n2">
+                <h2>Management &amp; Product</h2>
+                <ul>
+                    <li>Build awareness and knowledge about A11Y in the team</li>
+                    <li>Set A11Y goals</li>
+                    <li>Define clear A11Y requirements</li>
+                </ul>
             </div>
-        </figure>
+            <div class="page16-circle n3 objects">2</div>
+            <div class="page16-relief-points n4">
+                <h2>Design</h2>
+                <ul>
+                    <li>Create accessible text and multimedia content</li>
+                    <li>Consider all different types of user interaction, e.g. like keyboard users</li>
+                    <li>Design easy visual layouts and choose clear colors</li>
+                </ul>
+            </div>
+            <div class="page17-triangle n5 objects"><span>3</span></div>
+            <div class="page17-pain-points n6">
+                <h2>Development</h2>
+                <ul>
+                    <li>Implement correct structure &amp; semantics</li>
+                    <li>Use native HTML elements</li>
+                    <li>Understand ARIA</li>
+                    <li>Do unit testing</li>
+                </ul>
+            </div>
+            <div class="page17-circle n7 objects"><span>4</span></div>
+            <div class="page17-relief-points n8">
+                <h2>test</h2>
+                <ul>
+                    <li>Building specialisation and qualification in the team for A11Y testing</li>
+                    <li>Do automatic and manual testing</li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-
+    <div class="page17-grid page17-qr-code">
+        <div class="page17-left">
+        </div>
+        <div>
+            <div class="smallcapital unknown fat">
+                <p><strong>LEARN MORE ABOUT </strong> <a href="https://www.w3.org/WAI/planning-and-managing/">planning and managing</a></p>
+            </div>
+            <!-- <div class="bottom-link">
+                <img src="./images/qr-codes/w3g.planning.svg" alt="QR code leading to more information" aria-label="QR code" class="page17-qr"> 
+            </div> -->
+        </div>
+    </div>
 
 </body>
 
@@ -98,5 +231,5 @@
 
 <script src="./script.js"></script>
 <script>
-    renderNavigationButton(15)
+    renderNavigationButton(16)
 </script>

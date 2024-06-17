@@ -116,6 +116,8 @@ h3 {
 }
 
 .smallcapital {
+	font-family: SoinSansPro-Headline;
+	text-transform: uppercase;
 	line-height: 1.6;
 	letter-spacing: 0.14em;
 	text-transform: uppercase;

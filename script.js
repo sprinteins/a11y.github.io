@@ -81,6 +81,10 @@ function icon(direction) {
 	const el = document.createElement("img");
 	el.innerText = "el";
 	el.setAttribute("src", `./icons/icon_10_${direction}_carrat.svg`);
+	el.setAttribute(
+		"alt",
+		`${direction} button image. Arrow showing to the ${direction}`
+	);
 	el.classList.add(direction);
 
 	return el;

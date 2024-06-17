@@ -39,7 +39,7 @@
             display: grid;
             grid-template-columns: 50% 50%;
             column-gap: 0.5rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2.5rem;
         }
 
         .page12-tech-item img {
@@ -53,12 +53,14 @@
             border-color: #000000;
             border-width: 1px;
             margin-bottom: 0.25rem;
-            padding: 1px 3px;
+            padding: 6px 4px 2px 4px;
+            font-size: 0.875rem;
+            line-height: 1rem;
         }
 
         .page12-levels {
             display: flex;
-            margin-top: 1rem;
+            margin-top: 0.5rem;
             justify-content: space-between;
         }
 
@@ -73,6 +75,8 @@
             width: 3ch;
             text-align: right;
             left: -1ch;
+            font-family: HelveticaLTStd-Bold;
+	        font-weight: 700;
         }
 
         .page12-level {
@@ -81,10 +85,12 @@
             bottom: 18px;
             width: 100%;
             text-align: center;
+            font-family: SoinSansPro-Headline;
+	        text-transform: uppercase;
         }
 
         .page12-qr-code {
-            margin-top: 5rem;
+            margin-top: 3rem;
         }
 
         .page12-qr {
@@ -96,6 +102,12 @@
             grid-template-columns: 50% 50%;
             align-items: end;
         }
+
+        .learn-more {
+            font-family: SoinSansPro-Headline;
+	        text-transform: uppercase;
+        }
+        
     </style>
 </head>
 
@@ -175,7 +187,7 @@
             <li>
                 <div class="page12-tech-item">
                     <div class="page12-categories">
-                        <h2 class="copy">Understandable</h2>
+                        <h2 class="copy">Under&shystandable</h2>
                         <p>information and user interface</p>
                         <div class="page12-levels">
                             <div class="page12-level-wrapper" role="img" aria-label="It exists 8x A understandable information and user interface">
@@ -237,7 +249,7 @@
         </div>
         <div>
             <div class="smallcapital unknown fat">
-                <p>LEARN MORE about <a href="https://www.w3.org/TR/WCAG22/">WCAG</a></p>
+                <p class="learn-more">LEARN MORE about <a href="https://www.w3.org/TR/WCAG22/">WCAG</a></p>
             </div>
             <!-- <div class="bottom-link">
                 <img src="./images/qr-codes/w3g.wcag.svg" alt="QR code leading to more information" aria-label="QR code" class="page12-qr"> 

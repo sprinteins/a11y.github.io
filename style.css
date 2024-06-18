@@ -139,26 +139,31 @@ h3 {
 	flex-direction: row;
 	justify-content: space-between;
 	background-color: #f3f3f3;
-	padding: 2rem 0;
 	z-index: 10;
 	max-width: 400px;
+	height: 5rem;
 }
 
 .right::after {
 	display: block;
 	content: "";
-	background: url('./icons/icon_10_right_carrat.svg');
+	background: url("./icons/icon_10_right_carrat.svg");
+}
+
+.left {
+	margin-right: 2px;
 }
 
 .left::before {
 	display: block;
 	content: "";
-	background: url('./icons/icon_10_left_carrat.svg');
+	background: url("./icons/icon_10_left_carrat.svg");
 }
 
 .navigation-wrapper a {
 	display: flex;
-	align-items: end;
+	align-items: center;
+	justify-content: center;
 	margin: 0 0.5rem;
 	padding: 0 1rem;
 	font-family: SoinSansPro-Headline;
@@ -167,6 +172,7 @@ h3 {
 	letter-spacing: 0.14em;
 	font-size: 1rem;
 	text-decoration: none;
+	width: 10rem;
 }
 
 .navigation-btn:hover {

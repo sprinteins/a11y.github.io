@@ -62,7 +62,7 @@ function backButton(navigateToFile) {
 	el.setAttribute("href", navigateToFile);
 	el.classList.add("navigation-btn");
 	/* el.classList.add("left"); */
-	el.prependChild(icon("left"));
+	el.appendChild(icon("left"));
 
 	return el;
 }

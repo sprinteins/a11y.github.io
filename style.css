@@ -171,6 +171,10 @@ h3 {
 	text-decoration: underline;
 }
 
+.navigation-btn:visited {
+	color: #111913;
+}
+
 .bottom-image-container {
 	margin-top: 2rem;
 	margin-left: -20px;

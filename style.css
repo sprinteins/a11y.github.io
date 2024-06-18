@@ -21,7 +21,7 @@ body {
 	font-family: HelveticaNeueLTPro-Lt, Arial, sans-serif;
 	line-height: 1.4;
 	font-weight: 300;
-	margin: 20px;
+	margin: 24px;
 	color: #333;
 	hyphens: auto;
 	max-width: 400px;
@@ -132,7 +132,7 @@ h3 {
 
 .navigation-wrapper {
 	width: 100vw;
-	margin-left: -20px;
+	margin-left: -24px;
 	position: sticky;
 	bottom: 0;
 	display: flex;

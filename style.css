@@ -146,12 +146,12 @@ h3 {
 
 .right::after {
 	content: "";
-	background: url('icons/icon_10_right_carrat.svg');
+	background: url('./icons/icon_10_right_carrat.svg');
 }
 
 .left::before {
 	content: "";
-	background: url('icons/icon_10_left_carrat.svg');
+	background: url('./icons/icon_10_left_carrat.svg');
 }
 
 .navigation-wrapper a {

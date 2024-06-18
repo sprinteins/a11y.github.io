@@ -145,11 +145,13 @@ h3 {
 }
 
 .right::after {
+	display: block;
 	content: "";
 	background: url('./icons/icon_10_right_carrat.svg');
 }
 
 .left::before {
+	display: block;
 	content: "";
 	background: url('./icons/icon_10_left_carrat.svg');
 }

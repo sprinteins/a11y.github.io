@@ -38,7 +38,7 @@ img {
 
 h1,
 .h1 {
-	font-family: "HelveticaLTStd-Light", sans-serif;
+	font-family: HelveticaNeueLTPro-Lt, sans-serif;
 	font-weight: 300; /* Light */
 	font-size: 4.083rem; /* 49pt ≈ 4.083rem */
 	line-height: 1.2; /* ZAB 49pt ≈ 4.083rem */
@@ -51,7 +51,7 @@ h1,
 /* Class for H2 */
 h2,
 .h2 {
-	font-family: "HelveticaLTStd-Light", "Helvetica Neue LT Pro", sans-serif;
+	font-family: HelveticaNeueLTPro-Lt, "Helvetica Neue LT Pro", sans-serif;
 	font-weight: 300; /* Light */
 	font-size: 1.5rem; /* 24pt ≈ 1.5rem */
 	line-height: 2.833rem; /* ZAB 34pt ≈ 2.833rem */
@@ -60,7 +60,7 @@ h2,
 }
 
 .colored-headline h2 {
-	font-family: "HelveticaLTStd-Light", "Helvetica Neue LT Pro", sans-serif;
+	font-family: HelveticaNeueLTPro-Lt, "Helvetica Neue LT Pro", sans-serif;
 	font-weight: 300;
 	font-size: 2rem;
 	line-height: 1.5rem;
@@ -84,7 +84,7 @@ h3 {
 
 /* Class for Copy */
 .copy {
-	font-family: "HelveticaLTStd-Light", sans-serif;
+	font-family: HelveticaNeueLTPro-Lt, sans-serif;
 	font-weight: 300; /* Light */
 	font-size: 1.667rem; /* 20pt ≈ 1.667rem */
 	line-height: 2rem; /* ZAB 24pt ≈ 2rem */
@@ -92,14 +92,14 @@ h3 {
 
 /* Class for Unknown */
 .unknown {
-	font-family: "HelveticaLTStd-Light", sans-serif;
+	font-family: HelveticaNeueLTPro-Lt, sans-serif;
 	font-weight: 300; /* Light */
 	font-size: 1rem; /**/
 	line-height: 1.267rem; /*  */
 }
 
 .unknown2 {
-	font-family: "HelveticaLTStd-Light", sans-serif;
+	font-family: HelveticaNeueLTPro-Lt, sans-serif;
 	font-weight: 300; /* Light */
 	font-size: 1.2rem; /**/
 	line-height: 1.267rem; /*  */

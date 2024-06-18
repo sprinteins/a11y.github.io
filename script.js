@@ -58,7 +58,7 @@ function getFileName(number) {
 
 function backButton(navigateToFile) {
 	const el = document.createElement("a");
-	// el.innerText = "← back";
+	el.innerText = "back";
 	el.setAttribute("href", navigateToFile);
 	el.classList.add("navigation-btn");
 	el.appendChild(icon("left"));
@@ -68,7 +68,7 @@ function backButton(navigateToFile) {
 
 function forwardButton(navigateToFile) {
 	const el = document.createElement("a");
-	// el.innerText = "forward →";
+	el.innerText = "forward";
 	el.setAttribute("href", navigateToFile);
 	el.classList.add("navigation-btn");
 

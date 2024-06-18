@@ -199,3 +199,7 @@ h3 {
 .textlink:hover {
 	color: #1c966c;
 }
+
+.textlink:visited {
+	color: #333333;
+}

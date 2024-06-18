@@ -148,6 +148,11 @@ h3 {
 .right {
 	width: 3rem;
 	user-select: none;
+	content: "➔";
+}
+
+.left {
+	rotate: 180deg;
 }
 
 .navigation-wrapper a {

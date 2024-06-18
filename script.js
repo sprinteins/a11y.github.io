@@ -61,7 +61,7 @@ function backButton(navigateToFile) {
 	el.innerText = "back";
 	el.setAttribute("href", navigateToFile);
 	el.classList.add("navigation-btn");
-	/* el.classList.add("left"); */
+	el.classList.add("left"); 
 	el.appendChild(icon("left"));
 
 	return el;
@@ -72,7 +72,7 @@ function forwardButton(navigateToFile) {
 	el.innerText = "forward";
 	el.setAttribute("href", navigateToFile);
 	el.classList.add("navigation-btn");
-	/* el.classList.add("right"); */
+	el.classList.add("right");
 	el.appendChild(icon("right"));
 
 	return el;

@@ -39,7 +39,7 @@ img {
 h1,
 .h1 {
 	font-family: HelveticaNeueLTPro-Lt, sans-serif;
-	font-weight: 300; /* Light */
+	/* font-weight: 300; /* Light */
 	font-size: 4.083rem; /* 49pt ≈ 4.083rem */
 	line-height: 1.2; /* ZAB 49pt ≈ 4.083rem */
 	margin-block-start: 1.335em;
@@ -85,7 +85,7 @@ h3 {
 /* Class for Copy */
 .copy {
 	font-family: HelveticaNeueLTPro-Lt, sans-serif;
-	font-weight: 300; /* Light */
+	/* font-weight: 300; /* Light */
 	font-size: 1.667rem; /* 20pt ≈ 1.667rem */
 	line-height: 2rem; /* ZAB 24pt ≈ 2rem */
 }

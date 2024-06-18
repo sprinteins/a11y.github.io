@@ -20,6 +20,7 @@ strong {
 body {
 	font-family: "Helvetica Neue LT Pro", Arial, sans-serif;
 	line-height: 1.4;
+	font-weight: 300;
 	margin: 20px;
 	color: #333;
 	hyphens: auto;

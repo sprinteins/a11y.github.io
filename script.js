@@ -41,8 +41,10 @@ function renderNavigationButton(current) {
 
 	if (forwardNumber !== 1) {
 		wrapper.appendChild(back);
+		wrapper.appendChild(document.createElement("div"));
 	}
 	if (forwardNumber !== 21) {
+		wrapper.appendChild(document.createElement("div"));
 		wrapper.appendChild(forward);
 	}
 

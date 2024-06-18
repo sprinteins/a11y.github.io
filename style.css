@@ -145,12 +145,13 @@ h3 {
 }
 
 .right::after {
-	content: "➔";
+	content: "";
+	background: url('icons/icon_10_right_carrat.svg');
 }
 
 .left::before {
-	content: "➔";
-	rotate: 180deg;
+	content: "";
+	background: url('icons/icon_10_left_carrat.svg');
 }
 
 .navigation-wrapper a {

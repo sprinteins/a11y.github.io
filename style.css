@@ -145,20 +145,12 @@ h3 {
 	aling-items: center;
 }
 
-.right::after {
-	display: block;
-	content: "";
-	background: url("./icons/icon_10_right_carrat.svg");
+.right: {
+	margin-left: 4px;
 }
 
 .left {
-	margin-right: 2px;
-}
-
-.left::before {
-	display: block;
-	content: "";
-	background: url("./icons/icon_10_left_carrat.svg");
+	margin-right: 4px;
 }
 
 .navigation-wrapper a {

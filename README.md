@@ -84,7 +84,7 @@ Light
 
 Das hier wird die gewählte Lösung sein da es die bisherige Struktur beibehält und einfacher zu lösen ist
 
-## Project Structure
+# Project Structure
 
 TODO:
 category/

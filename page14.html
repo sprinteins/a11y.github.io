@@ -110,6 +110,23 @@
         .decision {
             font-weight: bold;
         }
+
+        .visually-hidden,
+        .visually-hidden-focusable:not(:focus):not(:focus-within) {
+            border: 0 !important;
+            clip: rect(0, 0, 0, 0) !important;
+            height: 1px !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            padding: 0 !important;
+            white-space: nowrap !important;
+            width: 1px !important;
+        }
+
+        .visually-hidden:not(caption),
+        .visually-hidden-focusable:not(:focus):not(:focus-within):not(caption) {
+            position: absolute !important;
+        }
     </style>
 
 
@@ -127,41 +144,8 @@
             <div class="smallcapital opening-question helvetica">
                 <h3>Do you know what your a11y problems are?</h3>
             </div>
-            <img src="./images/where_to_start.png" alt="A flowchart describing how you can start adding accessibility" />
-            <div class="hidden-explanation">
-                Identify Accessibility Problems:
-
-                "Do you know what your A11Y problems are?"
-                If no, proceed to "Did you evaluate the product?"
-                If yes, move to "Are your findings prioritised?"
-                Product Evaluation:
-
-                "Did you evaluate the product?"
-                If no, proceed to "How many pages do you have?"
-                If yes, return to the main flow asking "Are your findings prioritised?"
-                Page Count:
-
-                "How many pages do you have?"
-                If less than 5, "Test all pages."
-                If more than 5, "Test frequently used key processes."
-                Prioritization of Findings:
-
-                "Are your findings prioritised?"
-                If no, "Start with crucial processes, frequently-used web pages, high impact repairs, etc."
-                If yes, proceed to "Fix them."
-                Fixing Issues:
-
-                After testing or prioritizing, the next step is to "Fix them."
-                Post-Fix Evaluation:
-
-                "Do you still have known issues?"
-                If yes, "Report known barriers."
-                If no, the process ends.
-                Conclusion:
-
-                The flowchart concludes with the statement: "There is no 100% compliance with A11Y guidelines. But always aim as high as possible."
-            </div>
-            <ul class="flowchart hidden-explanation">
+            <img src="./images/where_to_start.png" aria-hidden="true" alt="A flowchart describing how you can start adding accessibility" />
+            <ul class="flowchart visually-hidden">
                 <li class="decision">Do you know what your A11Y problems are?
                     <ul>
                         <li>No

@@ -112,8 +112,10 @@ h3 {
 }
 
 .highlight {
+	font-family: HelveticaNeueLTPro-Bd;
+	/* old code
 	font-family: HelveticaLTStd-Bold;
-	font-weight: 700;
+	font-weight: 700; */
 }
 
 .smallcapital {

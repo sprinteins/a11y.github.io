@@ -22,10 +22,10 @@ function fillNavigationList(amount) {
 		const li = document.createElement("li");
 		const linkElement = document.createElement("a");
 		linkElement.innerText = `page ${count}`;
-		let link = `/page${count}.html`;
+		let link = `./page${count}.html`;
 
 		if (count === 0) {
-			link = `/index.html`;
+			link = `./index.html`;
 		}
 
 		linkElement.href = link;

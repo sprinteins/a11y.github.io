@@ -214,7 +214,7 @@ h3 {
 
 #navigation {
 	position: relative;
-	z-index: 10;
+	z-index: 20;
 }
 
 #menuToggle {

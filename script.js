@@ -117,7 +117,7 @@ function onLoad() {
 	this.style.height = this.contentWindow.document.body.scrollHeight + "px";
 }
 
-fetch("/navigation.html")
+fetch("./navigation.html")
 	.then((res) => res.text())
 	.then((text) => {
 		let oldelem = document.querySelector("body");

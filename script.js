@@ -1,4 +1,4 @@
-const pagesAmount = 20;
+const pagesAmount = 19;
 
 function loadPage(page) {
 	document.getElementById("iframe").src = page;
@@ -10,10 +10,30 @@ function renderButtons(amount) {
 	for (let count = 0; count <= amount; count++) {
 		const button = document.createElement("button");
 		button.innerText = `page ${count}`;
-		button.onclick = () => loadPage(`./src/page${count}.html`);
+		button.onclick = () => loadPage(`/page${count}.html`);
 		container.appendChild(button);
 	}
 }
+
+function fillNavigationList(amount) {
+	const container = document.getElementById("menu");
+
+	for (let count = 0; count <= amount; count++) {
+		const li = document.createElement("li");
+		const linkElement = document.createElement("a");
+		linkElement.innerText = `page ${count}`;
+		let link = `/page${count}.html`;
+
+		if (count === 0) {
+			link = `/index.html`;
+		}
+
+		linkElement.href = link;
+		li.appendChild(linkElement);
+		container.appendChild(li);
+	}
+}
+
 function renderIFrames(amount) {
 	const container = document.getElementById("container");
 
@@ -96,3 +116,15 @@ function icon(direction) {
 function onLoad() {
 	this.style.height = this.contentWindow.document.body.scrollHeight + "px";
 }
+
+fetch("/navigation.html")
+	.then((res) => res.text())
+	.then((text) => {
+		let oldelem = document.querySelector("body");
+		let newelem = document.createElement("div");
+		newelem.innerHTML = text;
+		oldelem.prepend(newelem);
+	})
+	.then(() => {
+		fillNavigationList(pagesAmount);
+	});

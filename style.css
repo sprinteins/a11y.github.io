@@ -210,7 +210,13 @@ h3 {
 	color: #333333 !important;
 }
 
-/* Navigation Style */
+/* 
+ *
+ *
+ *	Navigation Style 
+ *
+ *
+ */
 
 #navigation {
 	position: relative;
@@ -319,16 +325,15 @@ h3 {
 	margin: -100px 0 0 calc(var(--minusBodyMargin) + -8px);
 	padding: 50px;
 	padding-top: 125px;
-
 	background: #ededed;
 	list-style-type: none;
 	-webkit-font-smoothing: antialiased;
 	/* to stop flickering of text in safari */
-
 	transform-origin: 0% 0%;
 	transform: translate(-100%, 0);
-
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+	display: none;
 }
 
 #menu li {
@@ -341,4 +346,5 @@ h3 {
  */
 #menuToggle input:checked ~ ul {
 	transform: none;
+	display: initial;
 }

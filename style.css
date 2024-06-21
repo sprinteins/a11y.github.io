@@ -23,7 +23,7 @@ body {
 	font-family: HelveticaNeueLTPro-Lt, Arial, sans-serif;
 	line-height: 1.4;
 	font-weight: 300;
-	margin: var(--bodyMargin);
+	margin: auto;
 	color: #333;
 	hyphens: auto;
 	max-width: 400px;
@@ -34,9 +34,8 @@ img {
 	min-width: 100%;
 }
 
-.container {
-	margin: 0.5rem;
-	max-width: 500rem;
+[class*="container"] {
+	margin: 1.5rem;
 }
 
 h1,
@@ -136,7 +135,6 @@ h3 {
 
 .navigation-wrapper {
 	width: 100vw;
-	margin-left: -24px;
 	position: sticky;
 	bottom: 0;
 	display: flex;
@@ -146,7 +144,6 @@ h3 {
 	z-index: 10;
 	max-width: 400px;
 	height: 5rem;
-	aling-items: center;
 }
 
 .right {
@@ -189,7 +186,7 @@ h3 {
 	width: 100vw;
 	max-width: 400px;
 	margin-top: 2rem;
-	margin-left: -24px;
+	margin-left: 0;
 }
 
 .bottom-link {
@@ -226,11 +223,8 @@ h3 {
 #menuToggle {
 	display: block;
 	position: relative;
-	top: 0.5rem;
-	left: 0.5rem;
-
+	margin: 1.5rem;
 	z-index: 1;
-
 	-webkit-user-select: none;
 	user-select: none;
 }
@@ -324,7 +318,7 @@ h3 {
 #menu {
 	position: absolute;
 	width: 300px;
-	margin: -100px 0 0 calc(var(--minusBodyMargin) + -8px);
+	margin: -100px 0 0 calc(var(--minusBodyMargin));
 	padding: 50px;
 	padding-top: 125px;
 	background: #ededed;

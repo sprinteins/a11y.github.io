@@ -184,8 +184,10 @@ h3 {
 }
 
 .bottom-image-container {
+	width: 100vw;
+	max-width: 400px;
 	margin-top: 2rem;
-	margin-left: -20px;
+	margin-left: -24px;
 }
 
 .bottom-link {
